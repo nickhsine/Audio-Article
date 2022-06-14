@@ -510,10 +510,10 @@ nav {
     
     .articleframetitle {
         font-family: 'Noto Sans TC', sans-serif;
-        padding-left: 15px;
+        padding-left: 10px;
         width: 220px;
         height: 79px;
-        left: 26px;
+        left: 24px;
         top: 250px;
         line-height: 24px;
         font-style: normal;
@@ -536,7 +536,7 @@ nav {
     .articleframeauthor {
         font-family: 'Noto Sans TC', sans-serif;
         width: 57px;
-        left: 26px;
+        left: 14px;
         margin-left: 15px;
         font-style: normal;
         font-weight: 400;
