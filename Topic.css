@@ -488,3 +488,77 @@ nav {
     
     }
 }
+
+@media (max-width: 420px) {
+
+    .articlecover {
+        width: calc(100vw*(1100/1440));
+    }
+    
+    
+    .articleframepic {
+        width: 220px;
+    
+    }
+    
+    .articleframepic img {
+        width: 220px;
+        height: 217px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    
+    .articleframetitle {
+        font-family: 'Noto Sans TC', sans-serif;
+        padding-left: 15px;
+        width: 220px;
+        height: 79px;
+        left: 26px;
+        top: 250px;
+        line-height: 24px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        color: rgb(39, 38, 38);
+        margin-top: 15px;
+    
+    }
+    
+    .articleframetitle a{
+        color:#464545;
+        text-decoration:none
+    
+    }
+    .articleframetitle a:hover{
+        text-decoration:underline;
+        color:#e9706ea6
+    }
+    .articleframeauthor {
+        font-family: 'Noto Sans TC', sans-serif;
+        width: 57px;
+        left: 26px;
+        margin-left: 15px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #808080;
+    
+    }
+    
+    .articleframedate {
+        font-family: 'Noto Sans TC', sans-serif;
+        position: absolute;
+        width: 85px;
+        height: 21px;
+        right: 26px;
+        bottom: 42px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #808080;
+    
+    
+    }
+}
