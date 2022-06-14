@@ -1,0 +1,1054 @@
+
+<!-- saved from url=(0083)file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/index-desktop.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    
+    <title>Metadata Block</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com/">
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
+    <link href="./Metadata Block_files/css2" rel="stylesheet">
+
+    <!-- 載入思源黑體 -->
+    <link href="./Metadata Block_files/css2(1)" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="./Metadata Block_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="./Metadata Block_files/bootstrap.min(1).css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <style>
+        /* 網站字體 */
+        body {
+            font-family: 'Roboto', 'Noto Sans TC', sans-serif;
+            margin: 0;
+            background-color: #FBEEEA;
+        }
+
+
+        /* 網站排版置中 */
+        /* 👻 這個css要怎麼加？我用class加在div裡，東西還是沒有置中對齊 */
+        .block-horizontal-center {
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        /* 首頁各區域block：尺寸、背景色等等 */
+
+        .header-block {
+            width: 100%;
+            height: 80px;
+            background-color: white;
+            position: fixed;
+            left: 0;
+            z-index: 1;
+
+        }
+
+        .header {
+            width: 1440px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .featured-block {
+            width: 1440px;
+            height: auto;
+            /*margin-top: -80px;*/
+            position: relative;
+
+        }
+
+        .recommended-block {
+            width: 100vw;
+            height: auto;
+            background-color: #FBEEEA;
+
+        }
+
+        .your-voice-block {
+            width: 1440px;
+            height: auto;
+            background-color: white;
+
+        }
+
+        .footer-block {
+            width: 1440px;
+            height: 180px;
+            background-color: #E9706E;
+        }
+
+
+        /* ▼ header物件排版  
+
+        .statusbar1{
+            margin-left: 16px;
+        }
+        .statusbar2{
+            margin-left: 145px;
+        }
+        .statusbar3{
+            margin-right:13px ;
+        }
+        .statusbar-justified{
+            width: 3629x;
+            height:13px ;
+            margin-top: 5px;
+        }*/
+        .logo {
+            margin-left: 47px;
+            margin-right: 650px;
+            margin-bottom: 20px;
+            margin-top: 14px;
+            width: 160px;
+            height: auto;
+        }
+
+        .header-button {
+            margin-right: 46px;
+        }
+
+        /* navbar 
+         .ham-icon {
+            display: none;
+        }
+
+        .mynavbar {
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 25px 30px;
+        }
+
+        .mynavbar li {
+            list-style-type: none;
+            font-size: 20px;
+            color: #E9706E;
+            font-weight: 500;
+            margin: 0 8px;
+        }
+
+
+        .mynavbar li:hover {
+            color: #E9706E;
+            cursor: grab;
+        }
+
+        .navbar-toggler {
+            border: none;
+        }
+
+        .navbar-collapse {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .nav-link {
+            color: #e9706e !important;
+        }
+
+        .nav-link:hover {
+            font-weight: 700;
+        }*/
+
+
+        /* 桌機-精選文章*/
+        /* 👻👻👻 Carousel 照片排版問題：照片可以滿版＋自己選顯示的區塊嗎？*/
+        /* 👻👻👻 Carousel  要怎麼讓照片和header疊在一起?*/
+
+
+        /* ⬇️ 為 Bootstrap Carousel 我們想要的樣式 ⬇️ */
+
+        /* Daily featured文章大標 */
+
+        /* 短-文章大標排版 */
+        .featured-main-title-1 {
+            width: calc(1320/1440*100%);
+            height: 83px;
+            font-weight: bold;
+            font-size: 46px;
+            line-height: 83px;
+            text-align: left;
+            color: white;
+            margin-left: 80px;
+            position: absolute;
+            bottom: 140px;
+        }
+
+        /* 長-文章大標排版 */
+        .featured-main-title-2 {
+            width: calc(1320/1440*100%);
+            height: 83px;
+            font-weight: bold;
+            font-size: 46px;
+            line-height: 83px;
+            text-align: left;
+            color: white;
+            margin-left: 80px;
+            position: absolute;
+            bottom: 140px;
+        }
+
+        /* 固定照片高度，且讓照片撐滿版面 */
+        .carousel img {
+            height: 916px;
+            width: 100%;
+            object-fit: cover;
+            position: relative;
+        }
+
+        /* 調整示意圓點的位置 */
+        .carousel-indicators {
+            margin-bottom: 0px;
+            position: absolute;
+            bottom: 50px;
+        }
+
+        /* 調整示意圓點的樣子 */
+        .carousel-indicators [data-bs-target] {
+            border-radius: 50%;
+            background-color: white;
+            border: 1px;
+            width: 10px;
+            height: 10px;
+            margin-left: 10px;
+        }
+
+        .carousel-indicators .active[data-bs-target] {
+            background-color: #E9706E;
+        }
+
+        /* ⬆️ 為 Bootstrap Carousel 我們想要的樣式 ⬆️ */
+
+
+        /* ⬇️ 為 Bootstrap Collapse 我們想要的樣式 ⬇️ */
+        .annotation[data-bs-toggle="collapse"][aria-expanded="false"] img {
+            transform: rotate(-90deg);
+            transition: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .annotation[data-bs-toggle="collapse"][aria-expanded="true"] img {
+            transform: rotate(0deg);
+            transition: transform;
+            transition-duration: 0.3s;
+            transition-timing-function: ease-in-out;
+        }
+
+        .collapsing.annotation,
+        .collapse.annotation {
+            background-color: #fff;
+            padding-top: 15px;
+            padding-bottom: 20px;
+        }
+
+        .collapsing.annotation p,
+        .collapse.annotation p {
+            width: 300px;
+            margin-left: auto;
+            margin-right: auto;
+            font-size: 20px;
+            line-height: 40px;
+        }
+
+        /* ⬆️ 為 Bootstrap Collapse 我們想要的樣式 ⬆️ */
+
+
+
+        /* 電影和影集的推薦文章*/
+        /* 👻👻 卡片文章排版問題*/
+
+
+        .recommended-tag-svg1 {
+            margin-left: 635px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+        }
+
+        .recommended-tag-svg2 {
+            margin-left: 675px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+
+        }
+
+
+        /*
+        .recommended-article-block {
+            width: 100%;
+            height: 425px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+        */
+
+        /* 文章卡片外框*/
+        .recommended-article-card {
+            width: 289px;
+            border-radius: 30px;
+            background-color: #fff;
+            margin-left: auto;
+            margin-right: auto;
+            display : inline-block
+            /*height: 425px;
+            border-radius: 30px;
+            background-color: #fff;
+            margin-left: 160px;
+            margin-bottom: 45px;
+            text-align: center;
+            position: relative;*/
+        }
+        
+        /* 個別文章卡片位置調整， Justified-1、2、3、4，依序為電影23，影劇23的位置調整*/
+        /*
+        .recommended-article-card-justified-1 {
+            position: absolute;
+            bottom: -805px;
+            right: 550px;
+
+        }
+
+        .recommended-article-card-justified-2 {
+            position: absolute;
+            bottom: -805px;
+            right: 160px;
+
+        }
+
+        .recommended-article-card-justified-3 {
+            position: absolute;
+            bottom: -1690px;
+            right: 550px;
+
+        }
+
+        .recommended-article-card-justified-4 {
+            position: absolute;
+            bottom: -1690px;
+            right: 160px;
+
+        }
+        */
+
+        /* 文章卡片劇照*/
+      
+        .recommended-article-card-img {
+            width: 289px;
+            /*height: 217px;*/
+            border-radius: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .recommended-article-card-img> img{
+            width: 289px;
+            /*height: 217px;*/
+            border-radius: 30px;
+            margin-top: 26px;
+        }
+
+        /* 卡片文章大標一般*/
+        .recommended-article-card-title {
+            width: 275px;
+            height: auto;
+            color: rgb(38, 37, 37);
+            font-size: 22px;
+            line-height: 39px;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 10px;
+            margin-left: 24px;
+            margin-bottom: 30px;
+
+        }
+
+        .recommended-article-card-title-justified {
+            margin-bottom: 75px;
+
+        }
+
+        /* 卡片文章大標for字數多的*/
+        .recommended-article-card-title-1 {
+            width: 275px;
+            height: auto;
+            color: black;
+            font-size: 17px;
+            line-height: 33px;
+            font-weight: 700;
+            text-align: left;
+            margin-top: 6px;
+            margin-left: 24px;
+            margin-bottom: 30px;
+
+
+
+        }
+
+        /* 卡片文章資訊*/
+        .recommended-article-card-author {
+            width: 50px;
+            height: auto;
+            color: #808080;
+            font-size: 16 px;
+            line-height: 22px;
+            font-weight: 300;
+            text-align: left;
+            padding-bottom: 25px;
+            margin-left: 30px;
+            display : inline-block.
+        }
+        .recommended-article-card-date {
+            width: 50px;
+            height: auto;
+            color: #808080;
+            font-size: 16 px;
+            line-height: 22px;
+            font-weight: 300;
+            text-align: right;
+            padding-bottom: 25px;
+            margin-left: 30px;
+            display : inline-block.
+        }
+
+
+
+        /* 你的聲影 
+
+        .your-voice-tag-svg {
+            margin-left: 589px;
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+
+        .your-voice-description {
+            text-align: center;
+            font-size: 24px;
+            line-height: 39px;
+            font-weight: 700;
+            color: #7B7878;
+        }
+
+        .your-voice-card {
+            justify-content: center;
+            margin-left: 48px;
+            width: 200px;
+            height: 300px;
+
+        }
+
+
+        .your-voice-pick-button {
+            margin-left: 635px;
+            margin-bottom: 50px;
+        }*/
+
+        /* card area */
+        .card-area {
+
+            margin: 45px auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: calc(100vw*(1120/1440));
+            background-color: #FEFFF9;
+            border-radius: 30px;
+        }
+
+        .card-area h3 {
+            font-size: 24px;
+            line-height: 1.8;
+            font-weight: 700;
+            text-align: center;
+            width: 470px;
+            margin: 45px 0;
+        }
+
+        .cards {
+            width: calc(100vw*(936/1440));
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: center;
+            margin-bottom: 45px;
+        }
+
+        .cards li {
+            margin: 15px 24px;
+        }
+
+
+        .mybtn {
+            margin-bottom: 45px;
+            background-color: #e9706e;
+            color: #FEFFF9;
+            border-radius: 30px;
+            height: 54px;
+            font-size: 22px;
+            width: 176px;
+            font-weight: 700;
+        }
+
+        .articlesection{
+            width: 100vw;
+            margin-left: auto;
+            margin-left: auto;
+
+        }
+
+
+        /* 翻卡 */
+
+        ul {
+            list-style: none;
+        }
+
+        /* flip */
+        .flip-card {
+            background-color: transparent;
+            width: 200px;
+            height: 300px;
+            perspective: 1000px;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 200px;
+            height: 300px;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front,
+        .flip-card-back {
+            position: absolute;
+            width: 200px;
+            height: 300px;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-back {
+            transform: rotateY(180deg);
+        }
+
+
+        /* footer */
+
+        /* .footer-button {
+            justify-content: center;
+            font-size: 22px;
+            color: #FEFFF9;
+            font-weight: 700;
+        }
+
+        .footer-button-head {
+            height: 47px;
+            margin-top: 43px;
+            margin-left: 413px;
+            margin-right: 42px;
+        }
+
+        .footer-button-middle {
+            height: 47px;
+            margin-top: 43px;
+            margin-right: 42px;
+        }
+
+        .footer-button-tail {
+            height: 47px;
+            margin-top: 43px;
+            margin-right: 371px;
+        }
+
+        .footer-svg {
+            margin-left: 606.5px;
+            margin-top: 50px;
+        }
+
+        .footer-button-bar {
+            width: 656px;
+            margin-left: 413px;
+            margin-right: 413px;
+            padding-top: 50px;
+        }
+
+        .footer-button-svg {
+            margin-left: 42px;
+
+        }*/
+
+        /* footer */
+        /* footer */
+        .footer {
+            width: 100vw;
+            position: relative;
+            bottom: 0;
+            background-color: #E9706E;
+            height: 180px;
+            display: flex;
+            padding: 0 65px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            align-content: center
+        }
+
+        .footerbar {
+            display: flex;
+            justify-content: space-between;
+            width: 550px;
+            padding-bottom: 7px;
+        }
+
+        .footerbar li a {
+            list-style-type: none;
+            font-size: 20px;
+            color: #FEFFF9;
+            font-weight: 500;
+        }
+
+        .footerbar li a:hover {
+            text-decoration: none;
+            color: #FEFFF9;
+            cursor: grab;
+            font-weight: 700;
+        }
+
+        .copyright {
+            padding-top: 7px;
+            color: #FEFFF9;
+            font-size: 16px;
+            font-weight: 500;
+            position: absolute;
+            bottom: 30px;
+        }
+
+        /* RWD */
+        @media (max-width: 1514px) {
+            .cards {
+                width: calc(100vw*(600/1440));
+            }
+        }
+
+
+        @media (max-width: 1180px) {
+            .cards {
+                width: calc(100vw*(900/1440));
+            }
+        }
+
+        @media (max-width: 768px) {
+
+            /* header */
+            .ham-icon {
+                display: inline;
+            }
+
+            .logo {
+                width: 170px;
+            }
+
+            .mynavbar li {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 4px 0;
+            }
+
+            .mynavbar {
+                width: 100vw;
+                padding: 12px 16px;
+            }
+
+            /* card area */
+            .cards {
+                width: 400px;
+            }
+
+            .cards li {
+                margin: 15px 12px;
+            }
+
+            .cards img {
+                width: 114px;
+            }
+
+            .card-area h3 {
+                font-size: 20px;
+                width: 270px;
+                margin: 30px 0;
+            }
+
+            /* flip */
+            .flip-card {
+                width: 120px;
+                height: 170px;
+            }
+
+
+            /* footer */
+            .footer {
+                width: 100vw;
+                height: 60px;
+            }
+
+            .footerbar {
+                display: none;
+            }
+
+            .copyright {
+                bottom: 24px;
+                font-size: 14px;
+            }
+
+
+        }
+
+        @media (max-width: 575px) {
+
+            .navbar-collapse {
+                justify-content: center;
+            }
+
+            .mybtn {
+                height: 48px;
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- desktop version start -->
+    <div class="desktop-version">
+
+
+        <!-- 👻 header按鈕和固定待補 -->
+        <!-- ▼聲影少女 header -->
+
+        <div class="header-block">
+            <div class="header">
+                <!--  <div class="statusbar-justified">
+                    <img src="./asset/icon-statusbar-m.svg" class="statusbar1">
+                    <img src="./asset/icon-statusbar-m.svg" class="statusbar2">
+                    <img src="./asset/icon-statusbar-m.svg" class="statusbar3">
+                </div>-->
+
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/movie_index.html"><img src="./Metadata Block_files/Icon-logo.svg" class="logo"></a>
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/TV%20show_index.html"><img src="./Metadata Block_files/icon-header-button-1.svg" class="header-button"></a>
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/TV%20show_index.html"><img src="./Metadata Block_files/icon-header-button-2.svg" class="header-button"></a>
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/index-desktop.html"><img src="./Metadata Block_files/icon-header-button-3.svg" class="header-button"></a>
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/yourvoice.html"><img src="./Metadata Block_files/icon-header-button-4.svg" class="header-button"></a>
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/about%20us.html"><img src="./Metadata Block_files/icon-header-button-5.svg"></a>
+
+            </div>
+        </div>
+
+
+        <!-- <nav class="navbar navbar-expand-sm mynavbar navbar-light ">
+            <a class="navbar-brand" href="#">
+    
+    
+                <img src="./img/logo.svg" alt="" class="logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <img src="./img/Frame 38.svg" alt="" class="ham-icon">
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">電影</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">影集</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">錄音</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">你的聲影</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於少女</a>
+                    </li>
+    
+                </ul>
+            </div>
+        </nav>-->
+        <!-- ▲聲影少女 header -->
+
+
+
+
+        <!-- ▼本日精選 Daily Featured__carousel-->
+
+        <div class="featured-block">
+
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+
+                <!--底部標示所在文章的圓點按鈕-->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+
+                <!-- Carousel照片-->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Her.html"><img src="./Metadata Block_files/img-1.jpg" class="d-block w-100" alt="image 1"></a>
+                        <div class="featured-main-title-1">從雲端情人看愛「人」的勇氣</div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="false">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/The%20Worst%20Person%20in%20the%20World.html"><img src="./Metadata Block_files/img-2.jpg" class="d-block w-100" alt="image 2"></a>
+                        <div class="featured-main-title-2">當失去和擁有同樣困難：《世界上最爛的人》裡的現代女性困境</div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="false">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Arcane-%20League%20of%20Legends.html"></a><img src="./Metadata Block_files/img-3.jpg" class="d-block w-100" alt="image 3">
+                        <div class="featured-main-title-2">沒玩過遊戲也能共感！《英雄聯盟：奧術》帶你窺探英雄內心世界</div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="false">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/glass.html"></a><img src="./Metadata Block_files/img-4-m.jpg" class="d-block w-100" alt="image 4">
+                        <div class="featured-main-title-2">奈沙馬蘭超級英雄電影十年馬拉松最終章——Glass異裂</div>
+                    </div>
+                    <div class="carousel-item" data-bs-interval="false">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Toy%20Story.html"></a><img src="./Metadata Block_files/img-5-m.jpg" class="d-block w-100" alt="image 5">
+                        <div class="featured-main-title-1">《玩具總動員 4》玩具是誰?</div>
+                    </div>
+                </div>
+
+                <!--上下張按鈕-->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+            <!-- ▲ 本日精選 Daily Featured__carousel-->
+
+        </div>
+
+        <!-- ▼最新推薦文章區 Latest Recommended article -->
+        <!-- 👻卡片文章還沒放進去 -->
+
+        <div class="recommended-block">
+
+            <!-- ↓ 電影文章 -->
+            <div>
+                <img src="./Metadata Block_files/icon-film.svg" class="recommended-tag-svg2" alt="電影">
+                <!-- ↓ 電影文章卡片開始-->
+                <div class="articlesection">
+
+
+                    <!-- Recommended article block包住代表卡片外框的recommended article，然後裡面又分別會有圖，
+                        標、作者、時間等四個div -->
+
+                    <!-- ▼肉獄▼-->
+                    <div class=" recommended-article-card">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Raw.html">
+                            <div class="recommended-article-card-img">
+                            <img src="./Metadata Block_files/img-movie-card-1.png" alt="肉獄劇照">
+                            </div>
+                        </a>
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Raw.html">
+                        <div class="recommended-article-card-title ">
+                            《肉獄》當慾望戰勝道德時
+                        </div>
+                    </a>
+                        <div class="recommended-article-card-author">
+                            <span>戴丞萱</span>
+                        <div>
+
+                        </div>
+                            <span>2022.05.28</span>
+                        </div>
+                    </div>
+                    
+                    <!-- ▼奇蹟男孩▼-->
+                    <div class=" recommended-article-card ">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/wonder.html"><img src="./Metadata Block_files/img-movie-card-2.jpg" class="recommended-article-card-img" alt="奇蹟男孩劇照"></a>
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/wonder.html">
+                        <div class="recommended-article-card-title">
+                            奇蹟男孩靠的不是奇蹟 是努力和身邊的善意
+                        </div>
+                    </a>
+                        <div class="recommended-article-card-info">
+                            <span>徐仙紋</span>
+                            <span style=" position: absolute;bottom: 40px; right:25px ;">2022.05.28</span>
+                        </div>
+                    </div>
+
+                    <!-- ▼timecode▼-->
+                    <div class=" recommended-article-card  ">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Timecode.html"><img src="./Metadata Block_files/img-movie-card-3.jpg" class="recommended-article-card-img" alt="timecode劇照"></a>
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Timecode.html">
+                            <div class="recommended-article-card-title-1">你看我看你:金獎短片《Timecode》一言不合就跳舞的職場新美學
+
+                            </div>
+                        </a>
+                        <div class="recommended-article-card-info">
+                            <span>林子芸</span>
+                            <span style="position: absolute;bottom: 40px; right:25px ;">2022.05.28</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/movie_index.html"></a><img src="./Metadata Block_files/icon-check-all.svg" class="recommended-tag-svg1 recommended-tag-to-tag" alt="看更多">
+            </div>
+
+            <!-- ↓ 影集文章 -->
+            <div>
+                <img src="./Metadata Block_files/icon-series-m.svg" class="recommended-tag-svg2" alt="影集">
+
+                <!-- ↓ 影集文章卡片開始-->
+                <div class="recommended-article-block">
+
+                    <!-- 了不起的麥瑟爾夫人 -->
+                    <div class=" recommended-article-card">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/he%20Marvelous%20Mrs.%20Maisel.html"><img src="./Metadata Block_files/img-series-card-1.jpeg" class="recommended-article-card-img" alt="了不起的麥瑟爾夫人劇照"></a>
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/he%20Marvelous%20Mrs.%20Maisel.html">
+                            <div class="recommended-article-card-title">《了不起的麥瑟爾夫人》有什麼了不起？</div>
+                        </a>
+                        <div class="recommended-article-card-info">
+                            <span>朱珮儀</span>
+                            <span style="position: absolute;bottom: 40px; right:25px ;">2022.05.28</span>
+                        </div>
+                    </div>
+
+                    <!-- ▼后翼棄兵▼  -->
+                    <div class=" recommended-article-card recommended-article-card-justified-3">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/The%20Queen&#39;s%20Gambit.html"><img src="./Metadata Block_files/img-series-card-2.jpeg" class="recommended-article-card-img" alt="后翼棄兵劇照"></a>
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/The%20Queen&#39;s%20Gambit.html">
+                            <div class="recommended-article-card-title">擁有的天賦有其代價 《后翼棄兵》貝絲的成名之路</div>
+                        </a>
+                        <div class="recommended-article-card-info">
+                            <span>徐仙紋</span>
+                            <span style="position: absolute;bottom: 40px; right:25px ;">2022.05.28</span>
+                        </div>
+                    </div>
+
+                    <!-- ▼強風吹拂▼  -->
+
+                    <div class=" recommended-article-card recommended-article-card-justified-4">
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Run%20with%20the%20Wind.html"><img src="./Metadata Block_files/img-series-card-3.jpeg" class="recommended-article-card-img" alt="強風吹拂劇照"></a>
+                        <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/Run%20with%20the%20Wind.html">
+                            <div class="recommended-article-card-title">追逐的終點是什麼？——強風吹拂</div>
+                        </a>
+                        <div class="recommended-article-card-info">
+                            <span>郭芷毓</span>
+                            <span style="position: absolute;bottom: 40px; right:25px ;">2022.05.28</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/TV%20show_index.html"><img src="./Metadata Block_files/icon-check-all.svg" class="recommended-tag-svg1 " alt="看更多"></a>
+            </div>
+
+            <!-- ▲ 最新推薦文章區 Latest Recommended article  -->
+
+
+        </div>
+        <!-- ▼ 你的聲影-->
+        <div class="card-area">
+            <h3>又遇到選擇障礙不知道要看什麼影劇了嗎？點擊卡片抽一張適合今天的你的聲影</h3>
+            <ul class="cards">
+                <li>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Metadata Block_files/card1.svg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="./Metadata Block_files/movie1.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Metadata Block_files/card2.svg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="./Metadata Block_files/movie2.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Metadata Block_files/card1.svg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="./Metadata Block_files/movie3.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./Metadata Block_files/card2.svg" alt="">
+                            </div>
+                            <div class="flip-card-back">
+                                <img src="./Metadata Block_files/movie4.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button type="button" class="btn mybtn">少女幫你選</button>
+        </div>
+        <!-- ▲ 你的聲影 -->
+
+
+        <!-- footer -->
+        <div class="footer">
+            <ul class="footerbar">
+                <li><a href="file:///Users/jasmine/Desktop/Final%20project/merge/movie_index.html">電影</a></li>
+                <li><a href="file:///Users/jasmine/Desktop/Final%20project/merge/TV%20show_index.html">影集</a></li>
+                <li><a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/index-desktop.html">錄音</a></li>
+                <li><a href="file:///Users/jasmine/Desktop/Final%20project/merge/Front%20Page/yourvoice.html">你的聲影</a></li>
+                <li><a href="file:///Users/jasmine/Desktop/Final%20project/merge/about%20us.html">關於少女</a></li>
+            </ul>
+            <h6 class="copyright">Copyright © 2022 聲影少女.</h6>
+        </div>
+
+    </div>
+
+    <script src="./Metadata Block_files/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- bootstrap javascript -->
+    <script src="./Metadata Block_files/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="./Metadata Block_files/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="./Metadata Block_files/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+</body></html>
