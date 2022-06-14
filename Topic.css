@@ -513,12 +513,12 @@ nav {
         padding-left: 10px;
         width: 230px;
         height: 79px;
-        left: 24px;
+        left: 20px;
         top: 250px;
         line-height: 24px;
         font-style: normal;
         font-weight: 500;
-        font-size: 15px;
+        font-size: 18px;
         color: rgb(39, 38, 38);
         margin-top: 15px;
     
@@ -536,11 +536,11 @@ nav {
     .articleframeauthor {
         font-family: 'Noto Sans TC', sans-serif;
         width: 57px;
-        left: 14px;
+        left: 20px;
         margin-left: 15px;
         font-style: normal;
         font-weight: 400;
-        font-size: 14px;
+        font-size: 18px;
         line-height: 22px;
         color: #808080;
     
