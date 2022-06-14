@@ -1,0 +1,490 @@
+
+
+ul {
+    list-style: none;
+}
+
+
+/* my css */
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    max-width: 100%;
+    box-sizing: border-box;
+    background-color: #FBEEEA;
+}
+
+nav {
+    top: 0;
+    background-color: #FEFFF9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* navbar */
+.ham-icon {
+    display: none;
+}
+
+.mynavbar {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 25px 30px;
+}
+
+.mynavbar li {
+    list-style-type: none;
+    font-size: 20px;
+    color: #E9706E;
+    font-weight: 500;
+    margin: 0 8px;
+}
+
+
+.mynavbar li:hover {
+    color: #E9706E;
+    cursor: grab;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-collapse {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: #e9706e !important;
+}
+
+.nav-link:hover {
+    font-weight: 700;
+}
+
+/* 白底電影卡*/
+
+.title2frame{
+    display: flex;
+    justify-content: center
+}
+.title2 {
+    display: inline-block;
+    vertical-align: bottom;
+    height: 90px;
+    margin-top: 250px;
+    width: 180px;
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+.title2 .font {
+    height: 53px;
+    font-family: 'Noto Sans CJK TC';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 67px;
+    display: inline-block;
+    margin-left: 8px;
+    letter-spacing: 0.05em;
+    color: #E9706E;
+}
+
+.title2> img {
+    margin-left: 5px;
+    height: 40px;
+    vertical-align: text-bottom;
+
+}
+
+.title4> img {
+    margin-left: 5px;
+    height: 40px;
+    vertical-align: text-bottom;
+
+}
+
+.title5> img {
+    margin-left: 5px;
+    height: 40px;
+    vertical-align: text-bottom;
+
+}
+
+.title2 .bottom {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12px;
+    height: 5px;
+    background-color: #E9706E;
+    width: 170px;
+    border-radius: 30px;
+
+}
+
+
+
+.articlecover {
+    width: 1126px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 80px;
+}
+.section-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+.articleframe {
+    font-family: 'Noto Sans TC', sans-serif;
+    position: relative;
+    margin-top: 50px;
+    background-color: #FEFFF9;
+    width: 340px;
+    height: 425px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+    margin-right: 35px;
+    
+
+}
+
+
+.articleframepic {
+    position: relative;
+    background-color: #7a2424;
+    width: 289px;
+    height: 217px;
+    border-radius: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 26px;
+
+}
+
+.articleframepic img {
+    width: 289px;
+    height: 217px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+.articleframetitle {
+    font-family: 'Noto Sans TC', sans-serif;
+    position: absolute;
+    width: 292px;
+    height: 79px;
+    left: 26px;
+    top: 250px;
+    line-height: 32px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(39, 38, 38);
+
+}
+
+.articleframe a{
+    color:#464545;
+    text-decoration:none
+
+}
+.articleframe a:hover{
+    text-decoration:underline;
+    color:#e9706ea6
+}
+.articleframeauthor {
+    font-family: 'Noto Sans TC', sans-serif;
+    position: absolute;
+    width: 57px;
+    height: 21px;
+    left: 26px;
+    bottom: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+
+}
+
+.articleframedate {
+    font-family: 'Noto Sans TC', sans-serif;
+    position: absolute;
+    width: 85px;
+    height: 21px;
+    right: 26px;
+    bottom: 42px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #808080;
+
+
+}
+
+
+
+/* footer */
+.footer {
+    width: 100vw;
+    position: relative;
+    bottom: 0;
+    background-color: #E9706E;
+    height: 180px;
+    display: flex;
+    padding: 0 65px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center
+}
+
+.footerbar {
+    display: flex;
+    justify-content: space-between;
+    width: 550px;
+    padding-bottom: 7px;
+}
+
+.footerbar li a {
+    list-style-type: none;
+    font-size: 20px;
+    color: #FEFFF9;
+    font-weight: 500;
+}
+
+.footerbar li a:hover {
+    text-decoration: none;
+    color: #FEFFF9;
+    cursor: grab;
+    font-weight: 700;
+}
+
+.copyright {
+    padding-top: 7px;
+    color: #FEFFF9;
+    font-size: 16px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 30px;
+}
+
+
+
+/* RWD */
+@media (max-width: 1514px) {
+    .cards {
+        width: calc(100vw*(600/1440));
+    }
+}
+
+
+@media (max-width: 1180px) {
+    .articlecover {
+        width: calc(100vw*(1200/1440));
+    }
+}
+@media (max-width: 899px) {
+    .title2 .font {
+ 
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 67px;
+        display: inline-block;
+        margin-left: 8px;
+        letter-spacing: 0.05em;
+        color: #E9706E;
+    }
+    .title2frame{
+        display: flex;
+        justify-content: center;
+       
+    }
+    .title2 {
+        display: inline-block;
+        vertical-align: bottom;
+        height: 90px;
+        margin-top: 200px;
+        width: 150px;
+        margin-right: auto;
+        margin-left: auto;
+    
+    }
+    .title2 .bottom {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3px;
+        height: 3px;
+        background-color: #E9706E;
+        width: 120px;
+        border-radius: 30px;
+    
+    }
+   
+    
+    .title2> img {
+        margin-left: 5px;
+        height: 30px;
+        vertical-align: text-bottom;
+    
+    }
+}
+@media (max-width: 768px) {
+
+    /* header */
+    .ham-icon {
+        display: inline;
+    }
+
+    .logo {
+        width: 170px;
+    }
+
+    .mynavbar li {
+        font-size: 18px;
+        font-weight: 500;
+        margin: 4px 0;
+    }
+
+    .mynavbar {
+        width: 100vw;
+        padding: 12px 16px;
+    }
+
+    /* card area */
+    .cards {
+        width: 400px;
+    }
+
+    .cards li {
+        margin: 15px 12px;
+    }
+
+    .cards img {
+        width: 114px;
+    }
+
+    .card-area h3 {
+        font-size: 20px;
+        width: 270px;
+        margin: 30px 0;
+    }
+
+    /* flip */
+    .flip-card {
+        width: 120px;
+        height: 170px;
+    }
+
+
+    /* footer */
+    .footer {
+        width: 100vw;
+        height: 60px;
+    }
+
+    .footerbar {
+        display: none;
+    }
+
+    .copyright {
+        bottom: 24px;
+        font-size: 14px;
+    }
+
+
+}
+
+@media (max-width: 575px) {
+
+    .articlecover {
+        width: calc(100vw*(900/1440));
+    }
+    
+    
+    .articleframepic {
+        width: 220px;
+    
+    }
+    
+    .articleframepic img {
+        width: 220px;
+        height: 217px;
+        object-fit: cover;
+        border-radius: 30px;
+    }
+    
+    .articleframetitle {
+        font-family: 'Noto Sans TC', sans-serif;
+        position: absolute;
+        width: 222px;
+        height: 79px;
+        left: 26px;
+        top: 250px;
+        line-height: 25px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        color: rgb(39, 38, 38);
+        margin-top: 15px;
+    
+    }
+    
+    .articleframetitle a{
+        color:#464545;
+        text-decoration:none
+    
+    }
+    .articleframetitle a:hover{
+        text-decoration:underline;
+        color:#e9706ea6
+    }
+    .articleframeauthor {
+        font-family: 'Noto Sans TC', sans-serif;
+        position: absolute;
+        width: 57px;
+        height: 21px;
+        left: 26px;
+        bottom: 42px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #808080;
+    
+    }
+    
+    .articleframedate {
+        font-family: 'Noto Sans TC', sans-serif;
+        position: absolute;
+        width: 85px;
+        height: 21px;
+        right: 26px;
+        bottom: 42px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #808080;
+    
+    
+    }
+}

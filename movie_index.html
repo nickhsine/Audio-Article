@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>聲影少女</title>
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- my css -->
+    <link href="Topic.css" rel="stylesheet">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- bootstrap navbar -->
+    <nav class="navbar navbar-expand-sm mynavbar navbar-light ">
+        <a class="navbar-brand" href="#"><svg class="logo" width="238" height="47" viewBox="0 0 238 47" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M16 41C24.8366 41 32 33.8366 32 25C32 16.1634 24.8366 9 16 9C7.16345 9 0 16.1634 0 25C0 33.8366 7.16345 41 16 41Z"
+                    fill="#E9706E" />
+                <path
+                    d="M11.819 18.1429C8.59022 19.9358 10.7481 21.3068 10.7481 25.1602C10.7481 29.0136 8.59022 30.3765 11.819 32.1775C15.283 34.1001 15.283 31.6177 18.7389 29.6869C22.2029 27.7643 24.588 29.2813 24.588 25.1602C24.588 21.0391 21.8541 23.3836 18.8687 20.7227C15.8347 18.0212 15.283 16.2203 11.819 18.1429Z"
+                    fill="#FBEEEA" />
+                <path
+                    d="M50.42 14.19H46.43V16.23H58.19V14.19H54.32V13.59H58.97V11.52H54.32V10.35H50.42V11.52H45.59V13.59H50.42V14.19ZM61.82 23.94C63.08 23.67 64.25 23.34 65.3 22.92C66.38 23.34 67.52 23.7 68.81 23.94H61.82ZM64.13 27.57H53.87V26.88H64.13V27.57ZM53.87 33.84V33.18H64.13V33.84H53.87ZM64.13 30.72H53.87V30.03H64.13V30.72ZM66.56 18.63C66.14 19.02 65.63 19.38 65.06 19.68C64.49 19.38 63.98 19.02 63.59 18.63H66.56ZM66.02 13.68C66.08 15.15 66.41 16.08 67.67 16.41H62.45C63.38 15.6 63.83 14.67 64.01 13.68H66.02ZM50.93 18.81V19.98H49.88C49.91 19.59 49.91 19.23 49.91 18.87V18.81H50.93ZM55.04 19.98H53.9V18.81H55.04V19.98ZM70.04 16.56H70.73C71.33 16.56 72.11 16.53 72.53 16.35C72.41 15.51 72.38 14.67 72.32 13.8C71.93 13.95 71.06 14.01 70.64 14.01H69.95C69.5 14.01 69.47 13.71 69.47 13.2V10.92H60.86V12.42C60.86 13.44 60.56 14.28 58.22 15.06C58.58 15.3 59.12 15.87 59.6 16.41H59.57V18.63H62L60.29 19.08C60.74 19.74 61.28 20.31 61.88 20.85C60.8 21.12 59.63 21.3 58.37 21.42C58.91 22.02 59.51 23.1 59.87 23.94H48.59C49.01 23.34 49.31 22.65 49.52 21.96H58.34V16.83H46.67V18.78C46.67 20.07 46.49 21.66 44.93 22.98C45.38 23.16 46.07 23.55 46.73 23.94H46.37V26.88H49.64V33.84H45.53V36.78H64.13V38.85H68.45V36.78H72.41V33.84H68.45V26.88H71.63V23.94H70.85C71.3 23.1 72.08 21.99 72.71 21.39C71.3 21.3 69.98 21.15 68.78 20.91C69.95 19.89 70.88 18.66 71.54 17.07L70.04 16.56ZM82.01 17.07H88.61V17.79H82.01V17.07ZM82.01 13.95H88.61V14.67H82.01V13.95ZM93.95 21.39H87.89C87.74 21.03 87.56 20.67 87.38 20.34H92.93V17.13C93.95 17.94 95.06 19.08 95.69 19.92C98.6 18.09 101.54 15.48 103.64 12.48L99.5 10.83C98.09 13.11 95.36 15.36 92.93 16.71V11.4H77.9V20.34H85.31L83 20.79C83.09 20.97 83.18 21.18 83.27 21.39H76.64V24.66H93.95V21.39ZM100.13 19.02C98.54 21.51 95.36 24 92.75 25.44C93.83 26.25 95.09 27.54 95.75 28.5C98.75 26.55 101.9 23.79 104.12 20.67L100.13 19.02ZM87.38 32.88V31.86H89.75L87.38 32.88ZM79.91 31.86H83.12V35.1C83.12 35.37 83.03 35.46 82.73 35.46C82.52 35.46 81.95 35.46 81.38 35.46C81.92 34.56 82.4 33.6 82.79 32.73L79.91 31.86ZM82.52 28.11H88.19V29.13H82.52V28.11ZM92.42 31.86V25.35H78.5V31.86H79.13C78.53 33.24 77.57 34.77 76.64 35.82C77.45 36.36 78.89 37.47 79.55 38.1C80.03 37.53 80.57 36.75 81.08 35.94C81.47 36.84 81.86 37.98 82.01 38.88C83.6 38.88 84.92 38.85 86 38.34C87.14 37.8 87.38 36.93 87.38 35.22V33.09C88.22 34.68 89.15 36.78 89.54 38.07L92.78 36.57C92.36 35.31 91.34 33.39 90.47 31.86H92.42ZM100.58 27.27C98.87 30.66 95.57 33.51 92.24 35.16C93.32 36.06 94.58 37.5 95.24 38.58C99.05 36.27 102.41 32.97 104.63 28.74L100.58 27.27ZM113.3 14.58C112.1 18.15 110.06 22.14 108.08 24.57C109.13 25.02 111.02 26.01 111.89 26.64C113.75 23.94 115.97 19.62 117.44 15.69L113.3 14.58ZM126.98 16.26C128.93 19.47 131.3 23.85 132.35 26.58L136.1 24.36C134.9 21.66 132.56 17.58 130.52 14.4L126.98 16.26ZM128.66 25.89C124.97 32.16 117.53 33.96 107.54 34.62C108.35 35.73 109.19 37.5 109.55 38.79C120.38 37.65 128.3 35.16 132.68 27.63L128.66 25.89ZM119.48 10.41V29.31H123.83V10.41H119.48ZM157.82 21.45C156.86 24.27 155.6 26.49 153.95 28.23C152.39 27.54 150.8 26.85 149.24 26.19C149.84 24.75 150.5 23.13 151.13 21.45H157.82ZM167.21 34.68C164.96 33.48 161.9 31.95 158.51 30.33C160.37 28.02 161.78 25.11 162.83 21.45H167.09V16.74H163.97C164.09 16.11 164.18 15.45 164.3 14.79L159.62 13.71C159.47 14.76 159.29 15.78 159.08 16.74H152.78C153.41 14.79 153.98 12.81 154.4 10.89L149.69 10.23C149.18 12.33 148.52 14.52 147.74 16.74H140.06V21.45H145.91C144.86 23.97 143.72 26.34 142.64 28.26C145.01 29.22 147.41 30.27 149.72 31.38C146.99 32.82 143.54 33.75 139.25 34.41C140.27 35.55 141.35 37.38 141.83 38.67C147.26 37.62 151.46 36.15 154.73 33.87C158.3 35.7 161.48 37.5 163.82 38.91L167.21 34.68Z"
+                    fill="#E9706E" />
+            </svg></div>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="./Article page img/Frame 38.svg" alt="" class="ham-icon">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="./movie_index.html">電影</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./TV show_index.html">影集</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">錄音</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./Front Page/index-desktop.html">你的聲影</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./about us.html">關於少女</a>
+                </li>
+
+            </ul>
+        </div>
+         
+        </div>
+    </nav>
+
+    <div class="flex-container all">
+        <!--電影-->
+
+        <div class="title2frame">
+            <div class="title2">
+                <img src="./Topic icons/cinema.svg">
+                <div class="font">
+
+                    <span>
+                        電影
+                    </span>
+
+                </div>
+                <div class="bottom">
+                </div>
+            </div>
+        </div>
+        <div class="section-flex articlecover">
+            <!--世界上最爛的人-->
+            <div class="articleframe">
+
+                <div class="articleframepic">
+                    <a href="./The Worst Person in the World.html">
+                        <img src="./Topic photos/movie/WPITW.jpeg">
+                    </a>
+                </div>
+                <div class="articleframetitle">
+                    <a href="./The Worst Person in the World.html">
+                        當失去和擁有同樣困難：《世界上最爛的人》裡的女性困局</a>
+
+                    </p>
+                </div>
+                <div class="articleframeauthor">
+                    <p>
+                        林子芸
+                    </p>
+                </div>
+                <div class="articleframedate">
+                    <p>
+                        2022.05.28
+                    </p>
+                </div>
+            </div>
+            <!--雲端情人-->
+            <div class="articleframe">
+
+                <div class="articleframepic">
+                    <a href="./Her.html">
+                        <img src="./Topic photos/movie/her.jpeg"></a>
+                </div>
+                
+                    <div class="articleframetitle">
+                        <a href="./Her.html">
+                        <p>
+                            從雲端情人看愛「人」的勇氣
+                        </p>
+                    </a>
+                    </div>
+                
+            
+            <div class="articleframeauthor">
+                <p>
+                    郭芷毓
+                </p>
+            </div>
+            <div class="articleframedate">
+                <p>
+                    2022.05.28
+                </p>
+            </div>
+        </div>
+
+        <!--He's not that into you-->
+        <div class="articleframe">
+
+            <div class="articleframepic">
+                <a href="./He_s Just Not That Into You.html">
+                    <img src="./Topic photos/movie/He's just not that into you.webp"></a>
+            </div>
+            
+                <div class="articleframetitle">
+                    <a href="./He_s Just Not That Into You.html">
+                    <p>
+                        如何下船？暈船者的必讀指南—分析《他其實沒那麼喜歡你》的經典對白
+                    </p>
+                </a>
+                </div>
+            
+        
+        <div class="articleframeauthor">
+            <p>
+                郭芷毓
+            </p>
+        </div>
+        <div class="articleframedate">
+            <p>
+                2022.05.28
+            </p>
+        </div>
+    </div>
+    <!--奇蹟男孩-->
+    <div class="articleframe">
+
+        <div class="articleframepic">
+            <a href="./wonder.html">
+                <img src="./Topic photos/movie/w1.jpg"></a>
+        </div>
+        
+            <div class="articleframetitle">
+                <a href="./wonder.html">
+                <p>
+                    奇蹟男孩靠的不是奇蹟 是努力和身邊的善意
+                </p>
+            </a>
+            </div>
+        </a>
+    
+    <div class="articleframeauthor">
+        <p>
+            徐仙紋
+        </p>
+    </div>
+    <div class="articleframedate">
+        <p>
+            2022.05.28
+        </p>
+    </div>
+    </div>
+    <!--Glass異裂-->
+    <div class="articleframe">
+
+        <div class="articleframepic">
+            <a href="./glass.html">
+                <img src="./Topic photos/movie/gl7.jpg"></a>
+        </div>
+        <div class="articleframetitle">
+            <a href="./glass.html">
+                <p>
+                    奈沙馬蘭超級英雄電影十年馬拉松最終章《Glass異裂》
+                </p>
+            </a>
+        </div>
+        <div class="articleframeauthor">
+            <p>
+                朱珮儀
+            </p>
+        </div>
+        <div class="articleframedate">
+            <p>
+                2022.05.28
+            </p>
+        </div>
+    </div>
+
+    <!--少年小趙-->
+    <div class="articleframe">
+
+        <div class="articleframepic">
+            <a href="./A Young Patriot.html">
+                <img src="./Topic photos/movie/yp1.jpg"></a>
+        </div>
+        <div class="articleframetitle">
+            <a href="./A Young Patriot.html">
+                <p>
+                    在軍裝與平頭之間：《少年小趙》日常裝束裡的兩種心境轉變
+                </p>
+            </a>
+        </div>
+        <div class="articleframeauthor">
+            <p>
+                林子芸
+            </p>
+        </div>
+        <div class="articleframedate">
+            <p>
+                2022.05.28
+            </p>
+        </div>
+    </div>
+    <!--Timecode-->
+    <div class="articleframe">
+
+        <div class="articleframepic">
+            <a href="./Timecode.html">
+                <img src="./Topic photos/movie/timecode.jpeg"></a>
+        </div>
+        <div class="articleframetitle">
+            <a href="./Timecode.html">
+                <p>
+                    你看我看你：金獎短片《Timecode》一言不合就跳舞的職場新美學
+                </p>
+            </a>
+        </div>
+        <div class="articleframeauthor">
+            <p>
+                林子芸
+            </p>
+        </div>
+        <div class="articleframedate">
+            <p>
+                2022.05.28
+            </p>
+        </div>
+    </div>
+
+    <!--Toystory-->
+    <div class="articleframe">
+
+        <div class="articleframepic">
+            <a href="./Toy Story.html">
+                <img src="./Topic photos/movie/toy story4.avif"></a>
+        </div>
+        <div class="articleframetitle">
+            <a href="./Toy Story.html">
+                <p>
+                    《玩具總動員 4》玩具是誰？
+                </p>
+            </a>
+        </div>
+        <div class="articleframeauthor">
+            <p>
+                戴丞萱
+            </p>
+        </div>
+        <div class="articleframedate">
+            <p>
+                2022.05.28
+            </p>
+        </div>
+    </div>
+
+    <!--Raw-->
+    <div class="articleframe">
+
+        <div class="articleframepic">
+            <a href="./Raw.html">
+                <img src="./Topic photos/movie/RAW.png"></a>
+        </div>
+        <div class="articleframetitle">
+            <a href="./Raw.html">
+                <p>
+                    《肉獄》當慾望戰勝道德時
+                </p>
+            </a>
+        </div>
+        <div class="articleframeauthor">
+            <p>
+                戴丞萱
+            </p>
+        </div>
+        <div class="articleframedate">
+            <p>
+                2022.05.28
+            </p>
+        </div>
+    </div>
+
+    </div>
+
+
+    <!-- footer -->
+    <div class="footer">
+        <ul class="footerbar">
+            <li><a href="./movie_index.html">電影</a></li>
+            <li><a href="./TV show_index.html">影集</a></li>
+            <li><a href="">錄音</a></li>
+            <li><a href="./Front Page/index-desktop.html">你的聲影</a></li>
+            <li><a href="./about us.html">關於少女</a></li>
+        </ul>
+        <h6 class="copyright">Copyright © 2022 聲影少女.</h6>
+    </div>
+
+
+
+
+
+    <!-- bootstrap javascript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
