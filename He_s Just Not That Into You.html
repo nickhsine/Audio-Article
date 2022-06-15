@@ -771,12 +771,12 @@
 
         </p>
  
-        <!-- ipod 播放器 -->
+         <!-- ipod 播放器 -->
         <div id="mobile-player">
 
             <!-- 上十秒按鈕 -->
             <div id="mobile-prev-10" class="bt">
-                <img src="./Articlepage assets/next.svg">
+                <img src="./assets/next.svg">
             </div>
             <!-- 播放／暫停按鈕 -->
             <div id="mobile-play-bt" class="bt">
@@ -784,7 +784,7 @@
             </div>
             <!-- 下十秒按鈕 -->
             <div id="mobile-next-10" class="bt">
-                <img src="./Articlepage assets/prev.svg">
+                <img src="./assets/prev.svg">
             </div>
             <!-- progress bar -->
             <!-- 新增 .desktop-progress ，因為 .progress 要保留給 Bootstrap Progress 使用 -->
@@ -799,7 +799,7 @@
         <!-- 透過 <audio> 載入音檔 -->
         <!-- 因為沒有 `controls` 屬性，所以瀏覽器上上不會呈現預設的播放器 -->
         <audio id="mobile-audio">
-            <source src="./Articlepage audio/He_s just not that into you.mp3/audio/" type="audio/mpeg" />
+            <source src="./Articlepage audio/He_s just not that into you.mp3" type="audio/mpeg" />
         </audio>
 
         <!-- 載入 jQuery 套件 -->
@@ -850,7 +850,6 @@
                 mobile_player.currentTime = mobile_player.currentTime + 10;
             })
         </script>
-
         </div>
     </div>
     <div class="desktop-version">
@@ -882,6 +881,7 @@
                 <img src="./Articlepage assets/prev.svg">
             </div>
         </div>
+        
 
         <!-- 透過 <audio> 載入音檔 -->
         <!-- 因為沒有 `controls` 屬性，所以瀏覽器上上不會呈現預設的播放器 -->
