@@ -562,3 +562,23 @@ nav {
     
     }
 }
+@media (max-width: 575px) {
+    
+    .navbar-collapse {
+        justify-content: center;
+    }
+
+    .mybtn {
+        height: 48px;
+        font-size: 20px;
+    }
+
+
+}
+
+#live {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
