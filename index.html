@@ -246,7 +246,7 @@
         }
 
         /* 調整示意圓點的樣子 */
-        .carousel-indicators [data-bs-target] {
+        .carousel-indicators [data-target] {
             border-radius: 50%;
             background-color: white;
             border: 1px;
@@ -255,7 +255,7 @@
             margin-left: 10px;
         }
 
-        .carousel-indicators .active[data-bs-target] {
+        .carousel-indicators .active[data-target] {
             background-color: #E9706E;
         }
 
@@ -263,14 +263,14 @@
 
 
         /* ⬇️ 為 Bootstrap Collapse 我們想要的樣式 ⬇️ */
-        .annotation[data-bs-toggle="collapse"][aria-expanded="false"] img {
+        .annotation[data-slide-toggle="collapse"][aria-expanded="false"] img {
             transform: rotate(-90deg);
             transition: transform;
             transition-duration: 0.3s;
             transition-timing-function: ease-in-out;
         }
 
-        .annotation[data-bs-toggle="collapse"][aria-expanded="true"] img {
+        .annotation[data-slide-toggle="collapse"][aria-expanded="true"] img {
             transform: rotate(0deg);
             transition: transform;
             transition-duration: 0.3s;
@@ -293,6 +293,7 @@
             line-height: 40px;
         }
 
+
         /* ⬆️ 為 Bootstrap Collapse 我們想要的樣式 ⬆️ */
 
 
@@ -306,7 +307,7 @@
 
         }
 
-       /* .recommended-article-button {
+        /* .recommended-article-button {
             margin-left: 645px;
             margin-top: 30px;
             margin-bottom: 100px;
@@ -320,16 +321,16 @@
 
         }*/
 
-        .recommended-tag-svg2{
+        .recommended-tag-svg2 {
             margin-left: 645px;
             margin-top: 30px;
             margin-bottom: 100px;
-            
-        } 
 
-        .recommended-tag-svg2:hover{
+        }
+
+        .recommended-tag-svg2:hover {
             transform: scale(0.9);
-        } 
+        }
 
         /* 定文章間距、位置的*/
         .recommended-article-block {
@@ -352,9 +353,9 @@
             position: relative;
         }
 
-        .recommended-article-card:hover{
-           box-shadow: 10px 10px 7px rgba(165, 94, 94, 0.5); 
-           transform: scale(1.05);
+        .recommended-article-card:hover {
+            box-shadow: 10px 10px 7px rgba(165, 94, 94, 0.5);
+            transform: scale(1.05);
         }
 
         /* 文章卡片劇照*/
@@ -421,6 +422,8 @@
 
 
         /* 你的聲影 */
+
+        #yourvoice
 
         /* 固定翻卡卡片們的位置 */
         .cards {
@@ -565,6 +568,12 @@
 
 
         /* ▼ 首頁各區域block：尺寸、背景色等等 */
+
+        .mobile-version {
+            width: 390px;
+            margin-left: auto;
+            margin-right: auto;
+        }
 
         .m-header-block {
             width: 390px;
@@ -777,9 +786,10 @@
             margin-bottom: 0px;
 
         }
-        .m-recommended-tag-svg2:hover{
+
+        .m-recommended-tag-svg2:hover {
             transform: scale(0.9);
-        } 
+        }
 
         .m-recommended-article-block {
             width: 314px;
@@ -788,9 +798,9 @@
             margin-right: 38px;
         }
 
-        .m-recommended-article-card:hover{
-           box-shadow: 10px 10px 7px rgba(165, 94, 94, 0.5); 
-           transform: scale(1.05);
+        .m-recommended-article-card:hover {
+            box-shadow: 10px 10px 7px rgba(165, 94, 94, 0.5);
+            transform: scale(1.05);
         }
 
         /* 卡片外框*/
@@ -871,6 +881,8 @@
 
 
         /* 你的聲影 */
+
+        #m-yourvoice
 
         /* 固定翻卡卡片們的位置，就是我之前寫成 your-voice-card-block的東西 */
         .m-cards {
@@ -1061,7 +1073,7 @@
             }
 
             /* 調整示意圓點的樣子 */
-            .carousel-indicators [data-bs-target] {
+            .carousel-indicators [data-target] {
                 border-radius: 50%;
                 background-color: white;
                 border: 1px;
@@ -1151,7 +1163,7 @@
             <a class="navbar-brand" href="index.html">
 
 
-                <img src="./asset/icon/Icon-logo.svg" class="logo" alt="聲影少女">
+                <img src="./asset/icon/icon-logo.svg " class="logo" alt="聲影少女">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -1184,70 +1196,61 @@
 
         <div class="featured-block">
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <!--4.1 version-->
 
-                <!--底部標示所在文章的圓點按鈕-->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
 
-                <!-- Carousel照片-->
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+                <!--底部標是第幾張照片的圓點-->
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
+
+                <!--滾動照片區-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="Her.html"><img src="./asset/img/img-movie-her.jpg" class="d-block w-100"
-                                alt="image 1"></a>
+                        <a href="Her.html"><img class="d-block w-100" src="./asset/img/img-movie-her.jpg"
+                                alt="雲端情人劇照"></a>
                         <div class="featured-main-title-1">從雲端情人看愛「人」的勇氣</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="The Worst Person in the World.html"><img
-                                src="./asset/img/img-movie-the worst person in the world.jpg" class="d-block w-100"
-                                alt="image 2"></a>
+                    <div class="carousel-item">
+                        <a href="The Worst Person in the World.html"><img class="d-block w-100"
+                                src="./asset/img/img-movie-the worst person in the world.jpg" alt="世界上最爛的人劇照"></a>
                         <div class="featured-main-title-2">當失去和擁有同樣困難：《世界上最爛的人》裡的現代女性困境</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="Arcane- League of Legends.html"></a><img src="./asset/img/img-series-arcane.jpg"
-                            class="d-block w-100" alt="image 3"></a>
+                    <div class="carousel-item">
+                        <a href="Arcane- League of Legends.html"><img class="d-block w-100"
+                                src="./asset/img/img-series-arcane.jpg" alt="奧術劇照"></a>
                         <div class="featured-main-title-2">沒玩過遊戲也能共感！《英雄聯盟：奧術》帶你窺探英雄內心世界</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="glass.html"></a><img src="./asset/img/img-movie-glass.jpg" class="d-block w-100"
-                            alt="image 4"></a>
+                    <div class="carousel-item">
+                        <a href="glass.html"><img class="d-block w-100" src="./asset/img/img-movie-glass.jpg"
+                                alt="異裂劇照"></a>
                         <div class="featured-main-title-2">奈沙馬蘭超級英雄電影十年馬拉松最終章——Glass異裂</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="Toy Story.html"></a><img src="./asset/img/img-movie-toystory.jpg" class="d-block w-100"
-                            alt="image 5"></a>
+                    <div class="carousel-item">
+                        <a href="Toy Story.html"><img class="d-block w-100" src="./asset/img/img-movie-toystory.jpg"
+                                alt="玩具總動員4劇照"></a>
                         <div class="featured-main-title-1">《玩具總動員 4》玩具是誰?</div>
                     </div>
                 </div>
 
                 <!--上下張按鈕-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                    <span class="sr-only"></span>
+                </a>
 
             </div>
-
-            <!-- ▲ 本日精選 Daily Featured__carousel-->
-
         </div>
-
         <!-- ▼最新推薦文章區 Latest Recommended article -->
         <!-- 👻卡片文章還沒放進去 -->
 
@@ -1309,7 +1312,7 @@
                 </div>
 
                 <a href="movie_index.html"><img src="./asset/icon/icon-check-all.svg" class="recommended-tag-svg2 "
-                    alt="看更多"></a>
+                        alt="看更多"></a>
             </div>
 
             <!-- ↓ 影集文章 -->
@@ -1334,7 +1337,7 @@
 
                     <!-- ▼后翼棄兵▼  -->
                     <div class=" recommended-article-card recommended-article-card-justified-3">
-                        <a href="The Queen's Gambit.html"><img src="./asset/img/img-series-Queen_s gambit.jpeg"
+                        <a href="The Queen's Gambit.html"><img src="./asset/img/img-series-Queen's gambit.jpeg"
                                 class="recommended-article-card-img" alt="后翼棄兵劇照"></a>
                         <a href="The Queen_s Gambit.html">
                             <div class="recommended-article-card-title">擁有的天賦有其代價 《后翼棄兵》貝絲的成名之路</div>
@@ -1363,7 +1366,7 @@
                 </div>
 
                 <a href="TV show_index.html"><img src="./asset/icon/icon-check-all.svg" class="recommended-tag-svg2 "
-                            alt="看更多"></a>
+                        alt="看更多"></a>
 
             </div>
 
@@ -1377,7 +1380,7 @@
 
             <img src="./asset/icon/icon-your-voice.svg" class="your-voice-tag-svg" alt="你的聲影">
 
-            <div class="your-voice-description">選擇有障礙?點擊卡片，抽一張適合今天的你的聲影</div>
+            <div class="your-voice-description"> 選擇有障礙 ? 翻開你的聲影，讓少女幫你選 ♥︎♥︎♥︎</div>
 
 
             <ul class="cards">
@@ -1500,63 +1503,55 @@
 
         <div class="m-featured-block">
 
-            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div id="m-carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 
-                <!--底部標示所在文章的圓點按鈕-->
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
-                        class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-                        aria-label="Slide 4"></button>
-                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4"
-                        aria-label="Slide 5"></button>
-                </div>
+                <!--底部標是第幾張照片的圓點-->
+                <ol class="carousel-indicators">
+                    <li data-target="#m-carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#m-carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#m-carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#m-carouselExampleIndicators" data-slide-to="3"></li>
+                    <li data-target="#m-carouselExampleIndicators" data-slide-to="4"></li>
+                </ol>
 
-                <!-- Carousel照片-->
+                <!--滾動照片區-->
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                        <a href="Her.html"><img src="./asset/img/img-movie-her-m.jpg" class="d-block w-100"
-                                alt="image 1"></a>
+                        <a href="Her.html"><img class="d-block w-100" src="./asset/img/img-movie-her-m.jpg"
+                                alt="雲端情人劇照"></a>
                         <div class="m-featured-main-title-1">從雲端情人看愛「人」的勇氣</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="The Worst Person in the World.html"><img
-                                src="./asset/img/img-movie-the worst person in the world-m.jpg" class="d-block w-100"
-                                alt="image 2"></a>
+                    <div class="carousel-item">
+                        <a href="The Worst Person in the World.html"><img class="d-block w-100"
+                                src="./asset/img/img-movie-the worst person in the world-m.jpg" alt="世界上最爛的人劇照"></a>
                         <div class="m-featured-main-title-2">當失去和擁有同樣困難：《世界上最爛的人》裡的現代女性困境</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="Arcane- League of Legends.html"><img src="./asset/img/img-series-arcane-m.jpg"
-                                class="d-block w-100" alt="image 3"></a>
+                    <div class="carousel-item">
+                        <a href="Arcane- League of Legends.html"><img class="d-block w-100"
+                                src="./asset/img/img-series-arcane-m.jpg" alt="奧術劇照"></a>
                         <div class="m-featured-main-title-2">沒玩過遊戲也能共感！《英雄聯盟：奧術》帶你窺探英雄內心世界</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="glass.html"><img src="./asset/img/img-movie-glass.jpg" class="d-block w-100"
-                                alt="image 4"></a>
+                    <div class="carousel-item">
+                        <a href="glass.html"><img class="d-block w-100" src="./asset/img/img-movie-glass.jpg"
+                                alt="異裂劇照"></a>
                         <div class="m-featured-main-title-2">奈沙馬蘭超級英雄電影十年馬拉松最終章——Glass異裂</div>
                     </div>
-                    <div class="carousel-item" data-bs-interval="false">
-                        <a href="Toy Story.html"><img src="./asset/img/img-movie-toystory-m.jpg" class="d-block w-100"
-                                alt="image 5"></a>
+                    <div class="carousel-item">
+                        <a href="Toy Story.html"><img class="d-block w-100" src="./asset/img/img-movie-toystory-m.jpg"
+                                alt="玩具總動員4劇照"></a>
                         <div class="m-featured-main-title-1">《玩具總動員 4》玩具是誰?</div>
                     </div>
                 </div>
 
                 <!--上下張按鈕-->
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="prev">
+                <a class="carousel-control-prev" href="#m-carouselExampleIndicators" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
-                    data-bs-slide="next">
+                    <span class="sr-only"></span>
+                </a>
+                <a class="carousel-control-next" href="#m-carouselExampleIndicators" role="button" data-slide="next">
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+                    <span class="sr-only"></span>
+                </a>
 
             </div>
 
@@ -1673,7 +1668,7 @@
 
                 </div>
 
-                 <a href="TV show_index.html"><img src="./asset/icon/icon-check-all.svg" class="m-recommended-tag-svg2 "
+                <a href="TV show_index.html"><img src="./asset/icon/icon-check-all.svg" class="m-recommended-tag-svg2 "
                         alt="看更多"></a>
 
             </div>
@@ -1688,7 +1683,7 @@
 
                 <img src="./asset/icon/icon-your-voice.svg" class="m-your-voice-tag-svg" alt="你的聲影">
 
-                <div class=" m-your-voice-description"> 選擇有障礙 ? 點擊卡片，抽一張適合今天的你的聲影</div>
+                <div class=" m-your-voice-description"> 選擇有障礙 ? 翻開你的聲影， 讓少女幫你選 ♥︎♥︎♥︎</div>
 
 
                 <ul class="m-cards">
@@ -1766,10 +1761,10 @@
     <!-- ▲ mobile version -->
 
 
-    <!-- ▼bootstrap javascript -->
+    <!-- ▼bootstrap javascript 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
+        crossorigin="anonymous"></script>-->
 
     <!-- bootstrap javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
