@@ -493,6 +493,10 @@ nav {
 
     .articlecover {
         width: calc(100vw*(1150/1440));
+        padding-left: 30px;
+    }
+    .articleframe {
+        margin-top: 0px;
     }
     
     
@@ -561,6 +565,15 @@ nav {
     
     
     }
+    .title2 {
+    
+        margin-top: 120px;
+      
+    
+    }
+   
+
+ 
 }
 @media (max-width: 575px) {
     
