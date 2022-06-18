@@ -302,6 +302,29 @@ nav {
     }
 }
 @media (max-width: 899px) {
+    .articlecover {
+        width: calc(100vw*(1400/1440));
+    }
+    .articleframe{
+        width: 320px;
+    }
+    .articleframepic {
+        width: 280px;
+    
+    }
+    
+    .articleframepic img {
+        width: 280px;
+    
+    }
+    
+    .articleframetitle {
+     
+        width: 280px;
+  
+    
+    }
+    
     .title2 .font {
  
         font-weight: 500;
@@ -433,8 +456,7 @@ nav {
     }
     
     .articleframetitle {
-        font-family: 'Noto Sans TC', sans-serif;
-        position: absolute;
+     
         width: 222px;
         height: 79px;
         left: 26px;
@@ -492,7 +514,7 @@ nav {
 @media (max-width: 414px) {
 
     .articlecover {
-        width: calc(100vw*(1150/1440));
+        width: calc(100vw*(1350/1440));
         padding-left: 30px;
     }
     .articleframe {
@@ -502,12 +524,12 @@ nav {
     
     
     .articleframepic {
-        width: 230px;
+        width: 250px;
     
     }
     
     .articleframepic img {
-        width: 230px;
+        width: 250px;
         height: 217px;
         object-fit: cover;
         border-radius: 30px;
@@ -516,7 +538,7 @@ nav {
     .articleframetitle {
         font-family: 'Noto Sans TC', sans-serif;
         padding-left: 10px;
-        width: 230px;
+        width: 250px;
         height: 79px;
         left: 20px;
         top: 250px;
@@ -580,7 +602,7 @@ nav {
 @media (max-width: 390px) {
 
     .articlecover {
-        width: calc(100vw*(1150/1440));
+        width: calc(100vw*(1350/1440));
         padding-left: 30px;
     }
     .articleframe {
@@ -590,12 +612,12 @@ nav {
     
     
     .articleframepic {
-        width: 200px;
+        width: 240px;
     
     }
     
     .articleframepic img {
-        width: 200px;
+        width: 240px;
         height: 217px;
         object-fit: cover;
         border-radius: 30px;
@@ -604,7 +626,7 @@ nav {
     .articleframetitle {
         font-family: 'Noto Sans TC', sans-serif;
         padding-left: 10px;
-        width: 200px;
+        width: 240px;
         height: 79px;
         left: 20px;
         top: 250px;
