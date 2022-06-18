@@ -1,583 +1,582 @@
 <html>
 
-<head>
-
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>聲影少女</title>
-    <!-- bootstrap css -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <!-- my css -->
-    <link href="all.css" rel="stylesheet">
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="style-for-print.css" media="print">
-    <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <style>
-        .mobile-block {
-
-            background-color: #FFFFFF;
-            padding-bottom: 60px;
-            width: 100%;
-            height: auto;
-
-        }
-
-        .phone-block {
-            width: 100%;
-            height: auto;
-
-            background-color: #FFFFFF;
-            padding-bottom: 60px
-        }
-
-        body {
-            font-family: 'Noto Sans CJK TC', sans-serif;
-            background-color: #FFFFFF;
-        }
-
-        nav {
-            top: 0;
-            background-color: #FEFFF9;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        p {
-            width: 737px;
-            font-weight: 400;
-            line-height: 29px;
-            font-size: 16px;
-            color: #5B5B5B;
-
-
-            /*水平置中*/
-            margin-left: 165;
-            margin-right: auto;
-            margin-bottom: 40px;
-            margin-top: 40px;
-            text-align: justify;
-        }
-
-        p.phone {
-            width: 305px;
-            font-weight: 400;
-            line-height: 32px;
-            font-size: 17px;
-
-
-            /*水平置中*/
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 40px;
-            margin-top: 40px;
-            text-align: justify;
-        }
-
-        .phone-subtitle {
-            width: 305px;
-            font-weight: bold;
-            line-height: 32px;
-            font-size: 19px;
-            padding-left: 10px;
-
-
-            /*水平置中*/
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 40px;
-            margin-top: 40px;
-            border-left: 10px solid #E9706E;
-
-        }
-
-        .subtitle {
-
-            font-weight: bold;
-            line-height: 32px;
-            font-size: 19px;
-            padding-left: 10px;
-
-
-            /*水平置中*/
-            margin-left: 165;
-            margin-right: auto;
-            margin-bottom: 40px;
-            margin-top: 40px;
-            border-left: 10px solid #E9706E;
-
-        }
-
-        .tag-bt {
-            width: 100px;
-            font-weight: bold;
-            line-height: 29px;
-            background-color: #FBEEEA;
-            border: 1px solid #FBEEEA;
-            border-radius: 30px;
-            display: inline-block;
-            padding: 7px;
-            color: #E9706E;
-            font-size: 16px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .phone-tag-bt {
-            width: 74px;
-            font-weight: bold;
-            line-height: 29px;
-            background-color: #FBEEEA;
-            border: 1px solid #FBEEEA;
-            border-radius: 30px;
-            display: inline-block;
-            padding: 7px;
-            color: #E9706E;
-            font-size: 14px;
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        img.test {
-            border: 2px;
-            border-radius: 30px;
-
-        }
-
-        figure.mobile {
-            margin: 0px;
-            width: 100px;
-        }
-
-        figure.mobile>img {
-            width: 737px;
-            margin-left: 165;
-            margin-right: auto;
-        }
-
-        figcaption.mobile {
-            color: #5B5B5B;
-            width: 740px;
-            margin-top: 17px;
-            margin-left: 404;
-            margin-right: auto;
-            padding-bottom: 15px;
-            font-size: 14px;
-
-        }
-
-        figure.phone {
-            margin: 0px;
-            width: 100px;
-            width: 100%;
-            height: auto;
-        }
-
-        figure.phone>img {
-            width: 100%;
-            height: auto;
-        }
-
-        figcaption.phone {
-            color: #000000;
-            width: 100%;
-            height: auto;
-            margin-top: 17px;
-            margin-right: auto;
-            margin-left: auto;
-            padding-bottom: 15px;
-            font-size: 14px;
-            text-align: center;
-        }
-
-        body {
-            display: flex;
-            min-height: 100vh;
-            flex-direction: column;
-        }
-
-        header,
-        footer {
-            line-height: 100px;
-            height: 100px;
-        }
-
-        footer {
-            margin-top: 650px
-        }
-
-        .footer {
-            height: 45px;
-            background-color: #E9706E;
-        }
-
-        /* header在這裡 */
-        /* navbar */
-        /* navbar */
-        .ham-icon {
-            display: none;
-        }
-
-        .mynavbar {
-            z-index: 10;
-            position: fixed;
-            top: 0;
-            width: 100vw;
-            display: flex;
-            justify-content: space-between;
-            text-align: center;
-            padding: 25px 30px;
-        }
-
-        .mynavbar li {
-            list-style-type: none;
-            font-size: 20px;
-            color: #E9706E;
-            font-weight: 500;
-            margin: 0 8px;
-        }
-
-
-        .mynavbar li:hover {
-            color: #E9706E;
-            cursor: grab;
-        }
-
-        .navbar-toggler {
-            border: none;
-        }
-
-        .navbar-collapse {
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .nav-link {
-            color: #e9706e !important;
-        }
-
-        .nav-link:hover {
-            font-weight: 700;
-        }
-
-        .footer {
-            width: 100vw;
-            position: relative;
-            bottom: 0;
-            background-color: #E9706E;
-            height: 180px;
-            display: flex;
-            padding: 0 65px;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            align-content: center;
-        }
-
-        .footerbar {
-            display: flex;
-            justify-content: space-between;
-            width: 550px;
-            padding-bottom: 7px;
-        }
-
-        .footerbar li a {
-            list-style-type: none;
-            font-size: 20px;
-            color: #FEFFF9;
-            font-weight: 500;
-        }
-
-        .footerbar li a:hover {
-            text-decoration: none;
-            color: #FEFFF9;
-            cursor: grab;
-            font-weight: 700;
-        }
-
-        .copyright {
-            padding-top: 7px;
-            color: #FEFFF9;
-            font-size: 16px;
-            font-weight: 500;
-            position: absolute;
-            bottom: 30px;
-            padding: 10px;
-        }
-
-        #desktop-player {
-            width: 304px;
-            height: 451px;
-            background-color: #E9706E;
-            border-radius: 30px;
-            position: fixed;
-            left: 979px;
-            top: 203px;
-        }
-
-        #desktop-player .white-screen {
-            width: 241px;
-            height: 222px;
-
-            background-color: #FEFFF9;
-            border-radius: 30px;
-
-            /* 以 #desktop-player 為參考點移動 */
-            position: absolute;
-            left: calc(1011px - 979px);
-            top: calc(233px - 203px);
-        }
-
-        #desktop-player h6 {
-            font-weight: 700;
-            font-size: 22px;
-            color: #FEFFF9;
-
-            /* 清空 h6 預設的margin */
-            margin: 0;
-
-            width: 237px;
-
-            /* 以 #desktop-player 為參考點移動 */
-            position: absolute;
-            left: calc(1015px - 979px);
-            top: calc(466px - 203px);
-        }
-
-        #desktop-player .desktop-progress {
-            width: 237px;
-            height: 10px;
-            background-color: #FEFFF9;
-            border-radius: 30px;
-
-            /* 以 #desktop-player 為參考點移動 */
-            position: absolute;
-            left: calc(1015px - 979px);
-            top: calc(557px - 203px);
-        }
-
-        #desktop-progress-bar {
-            background-color: #FFD4C7;
-        }
-
-        .bt {
-            cursor: pointer;
-        }
-
-        /* desktop 的按鈕圖案設定 */
-        #desktop-player .bt>img {
-            width: 100%;
-        }
-
-        #desktop-next-10 {
-            /* 以 #desktop-player 為參考點移動 */
-            position: absolute;
-            left: calc(1180px - 979px);
-            top: calc(600px - 203px);
-        }
-
-        #desktop-prev-10 {
-            /* 以 #desktop-player 為參考點移動 */
-            position: absolute;
-            left: calc(1051px - 979px);
-            top: calc(600px - 203px);
-        }
-
-        #desktop-play-bt {
-            /* 預設顯示播放鍵 */
-            background-image: url('./Articlepage assets/play.svg');
-            background-size: contain;
-
-            width: 53px;
-            height: 53px;
-
-            /* 以 #desktop-player 為參考點移動 */
-            position: absolute;
-            left: calc(1105px - 979px);
-            top: calc(584px - 203px);
-        }
-
-        #desktop-play-bt.pause {
-            /* player 暫停狀態，顯示播放鍵 */
-            background-image: url('./Articlepage assets/play.svg');
-        }
-
-        #desktop-play-bt.play {
-            /* player 播放狀態，顯示暫停鍵 */
-            background-image: url('./Articlepage assets/pause.svg');
-        }
-
-        #mobile-player {
-            width: 100%;
-            height: 60px;
-            background-color: #E9706E;
-            position: fixed;
-            left: 0px;
-            bottom: 0px;
-
-            /* 使用 flexbox，讓三個按鈕與進度條並排且對齊 */
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-        }
-
-        #mobile-player .mobile-progress {
-            /* 怕手機尺寸太小不夠放進度條，加上 max-width 處理 */
-            max-width: 284px;
-            width: 284px;
-            height: 6px;
-            background-color: #FEFFF9;
-            border-radius: 30px;
-        }
-
-        /* 調整進度條在跑的背景色 */
-        #mobile-progress-bar {
-            background-color: #FFD4C7;
-        }
-
-        /* mobile 的按鈕設定 */
-        #mobile-play-bt {
-            /* 預設顯示播放鍵 */
-            background-image: url('./Articlepage assets/play.svg');
-            background-size: contain;
-            width: 21px;
-            height: 21px;
-        }
-
-        #mobile-play-bt.pause {
-            /* player 暫停狀態，顯示播放鍵 */
-            background-image: url('./Articlepage assets/play.svg');
-        }
-
-        #mobile-play-bt.play {
-            /* player 播放狀態，顯示暫停鍵 */
-            background-image: url('./Articlepage assets/pause.svg');
-        }
-
-        #mobile-player #mobile-prev-10 {
-            width: 12px;
-        }
-
-        #mobile-player #mobile-next-10 {
-            width: 12px;
-        }
-
-        /* mobile 的按鈕圖案設定 */
-        #mobile-player .bt img {
-            width: 100%;
-        }
-
-
-        @media (min-width: 769px) {
-            .desktop-version {
-                display: block;
+    <head>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>聲影少女</title>
+        <!-- bootstrap css -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- my css -->
+        <link href="all.css" rel="stylesheet">
+        <!-- google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="style-for-print.css" media="print">
+        <link rel="stylesheet" type="text/css" href="https://meyerweb.com/eric/tools/css/reset/reset200802.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <style>
+            .mobile-block {
+    
+                background-color: #FFFFFF;
+                padding-bottom: 60px;
+                width: 100%;
+                height: auto;
+    
             }
-
-            .mobile-version {
-                display: none;
+    
+            .phone-block {
+                width: 100%;
+                height: auto;
+    
+                background-color: #FFFFFF;
+                padding-bottom: 60px
             }
-        }
-
-        @media (max-width: 768px) {
-            .desktop-version {
-                display: none;
+    
+            body {
+                font-family: 'Noto Sans CJK TC', sans-serif;
+                background-color: #FFFFFF;
             }
-
-            .mobile-version {
-                display: block;
+    
+            nav {
+                top: 0;
+                background-color: #FEFFF9;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
             }
-        }
-
-        @media (max-width: 1514px) {
-            .cards {
-                width: calc(100vw*(600/1440));
+    
+            p {
+                width: 737px;
+                font-weight: 400;
+                line-height: 29px;
+                font-size: 16px;
+                color: #5B5B5B;
+    
+    
+                /*水平置中*/
+                margin-left: 165;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                text-align: justify;
             }
-        }
-
-
-        @media (max-width: 1180px) {
-            .cards {
-                width: calc(100vw*(900/1440));
+    
+            p.phone {
+                width: 305px;
+                font-weight: 400;
+                line-height: 32px;
+                font-size: 17px;
+    
+    
+                /*水平置中*/
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                text-align: justify;
             }
-        }
-
-        @media (max-width: 768px) {
-
-            /* header */
+    
+            .phone-subtitle {
+                width: 305px;
+                font-weight: bold;
+                line-height: 32px;
+                font-size: 19px;
+                padding-left: 10px;
+    
+    
+                /*水平置中*/
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                border-left: 10px solid #E9706E;
+    
+            }
+    
+            .subtitle {
+    
+                font-weight: bold;
+                line-height: 32px;
+                font-size: 19px;
+                padding-left: 10px;
+    
+    
+                /*水平置中*/
+                margin-left: 165;
+                margin-right: auto;
+                margin-bottom: 40px;
+                margin-top: 40px;
+                border-left: 10px solid #E9706E;
+    
+            }
+    
+            .tag-bt {
+                width: 100px;
+                font-weight: bold;
+                line-height: 29px;
+                background-color: #FBEEEA;
+                border: 1px solid #FBEEEA;
+                border-radius: 30px;
+                display: inline-block;
+                padding: 7px;
+                color: #E9706E;
+                font-size: 16px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+    
+            .phone-tag-bt {
+                width: 74px;
+                font-weight: bold;
+                line-height: 29px;
+                background-color: #FBEEEA;
+                border: 1px solid #FBEEEA;
+                border-radius: 30px;
+                display: inline-block;
+                padding: 7px;
+                color: #E9706E;
+                font-size: 14px;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+            }
+    
+            img.test {
+                border: 2px;
+                border-radius: 30px;
+    
+            }
+    
+            figure.mobile {
+                margin: 0px;
+                width: 100px;
+            }
+    
+            figure.mobile>img {
+                width: 737px;
+                margin-left: 165;
+                margin-right: auto;
+            }
+    
+            figcaption.mobile {
+                color: #5B5B5B;
+                width: 740px;
+                margin-top: 17px;
+                margin-left: 404;
+                margin-right: auto;
+                padding-bottom: 15px;
+                font-size: 14px;
+    
+            }
+    
+            figure.phone {
+                margin: 0px;
+                width: 100px;
+                width: 100%;
+                height: auto;
+            }
+    
+            figure.phone>img {
+                width: 100%;
+                height: auto;
+            }
+    
+            figcaption.phone {
+                color: #000000;
+                width: 100%;
+                height: auto;
+                margin-top: 17px;
+                margin-right: auto;
+                margin-left: auto;
+                padding-bottom: 15px;
+                font-size: 14px;
+                text-align: center;
+            }
+    
+            body {
+                display: flex;
+                min-height: 100vh;
+                flex-direction: column;
+            }
+    
+            header,
+            footer {
+                line-height: 100px;
+                height: 100px;
+            }
+    
+            footer {
+                margin-top: 650px
+            }
+    
+            .footer {
+                height: 45px;
+                background-color: #E9706E;
+            }
+    
+            /* header在這裡 */
+            /* navbar */
+            /* navbar */
             .ham-icon {
-                display: inline;
+                display: none;
             }
-
-            .logo {
-                width: 170px;
-            }
-
-            .mynavbar li {
-                font-size: 18px;
-                font-weight: 500;
-                margin: 4px 0;
-            }
-
+    
             .mynavbar {
+                z-index: 10;
+                position: fixed;
+                top: 0;
                 width: 100vw;
-                padding: 12px 16px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding: 25px 30px;
             }
-
-            
-
-            /* footer */
+    
+            .mynavbar li {
+                list-style-type: none;
+                font-size: 20px;
+                color: #E9706E;
+                font-weight: 500;
+                margin: 0 8px;
+            }
+    
+    
+            .mynavbar li:hover {
+                color: #E9706E;
+                cursor: grab;
+            }
+    
+            .navbar-toggler {
+                border: none;
+            }
+    
+            .navbar-collapse {
+                display: flex;
+                justify-content: flex-end;
+            }
+    
+            .nav-link {
+                color: #e9706e !important;
+            }
+    
+            .nav-link:hover {
+                font-weight: 700;
+            }
+    
             .footer {
                 width: 100vw;
-                height: 60px;
-            }
-
-            .footerbar {
-                display: none;
-            }
-
-            .copyright {
-                bottom: 24px;
-                font-size: 14px;
-            }
-
-
-        }
-
-        @media (max-width: 575px) {
-
-            .navbar-collapse {
+                position: relative;
+                bottom: 0;
+                background-color: #E9706E;
+                height: 180px;
+                display: flex;
+                padding: 0 65px;
                 justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                align-content: center;
             }
-
-            .mybtn {
-                height: 48px;
+    
+            .footerbar {
+                display: flex;
+                justify-content: space-between;
+                width: 550px;
+                padding-bottom: 7px;
+            }
+    
+            .footerbar li a {
+                list-style-type: none;
                 font-size: 20px;
+                color: #FEFFF9;
+                font-weight: 500;
             }
-
-
-        }
-
-        #live {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-direction: row;
-        }
-    </style>
-</head>
+    
+            .footerbar li a:hover {
+                text-decoration: none;
+                color: #FEFFF9;
+                cursor: grab;
+                font-weight: 700;
+            }
+    
+            .copyright {
+                padding-top: 7px;
+                color: #FEFFF9;
+                font-size: 16px;
+                font-weight: 500;
+                position: absolute;
+                bottom: 30px;
+                padding: 10px;
+            }
+    
+            #desktop-player {
+                width: 304px;
+                height: 451px;
+                background-color: #E9706E;
+                border-radius: 30px;
+                position: fixed;
+                left: 979px;
+                top: 203px;
+            }
+    
+            #desktop-player .white-screen {
+                width: 241px;
+                height: 222px;
+    
+                background-color: #FEFFF9;
+                border-radius: 30px;
+    
+                /* 以 #desktop-player 為參考點移動 */
+                position: absolute;
+                left: calc(1011px - 979px);
+                top: calc(233px - 203px);
+            }
+    
+            #desktop-player h6 {
+                font-weight: 700;
+                font-size: 22px;
+                color: #FEFFF9;
+    
+                /* 清空 h6 預設的margin */
+                margin: 0;
+    
+                width: 237px;
+    
+                /* 以 #desktop-player 為參考點移動 */
+                position: absolute;
+                left: calc(1015px - 979px);
+                top: calc(466px - 203px);
+            }
+    
+            #desktop-player .desktop-progress {
+                width: 237px;
+                height: 10px;
+                background-color: #FEFFF9;
+                border-radius: 30px;
+    
+                /* 以 #desktop-player 為參考點移動 */
+                position: absolute;
+                left: calc(1015px - 979px);
+                top: calc(557px - 203px);
+            }
+    
+            #desktop-progress-bar {
+                background-color: #FFD4C7;
+            }
+    
+            .bt {
+                cursor: pointer;
+            }
+    
+            /* desktop 的按鈕圖案設定 */
+            #desktop-player .bt>img {
+                width: 100%;
+            }
+    
+            #desktop-next-10 {
+                /* 以 #desktop-player 為參考點移動 */
+                position: absolute;
+                left: calc(1180px - 979px);
+                top: calc(600px - 203px);
+            }
+    
+            #desktop-prev-10 {
+                /* 以 #desktop-player 為參考點移動 */
+                position: absolute;
+                left: calc(1051px - 979px);
+                top: calc(600px - 203px);
+            }
+    
+            #desktop-play-bt {
+                /* 預設顯示播放鍵 */
+                background-image: url('./Articlepage assets/play.svg');
+                background-size: contain;
+    
+                width: 53px;
+                height: 53px;
+    
+                /* 以 #desktop-player 為參考點移動 */
+                position: absolute;
+                left: calc(1105px - 979px);
+                top: calc(584px - 203px);
+            }
+    
+            #desktop-play-bt.pause {
+                /* player 暫停狀態，顯示播放鍵 */
+                background-image: url('./Articlepage assets/play.svg');
+            }
+    
+            #desktop-play-bt.play {
+                /* player 播放狀態，顯示暫停鍵 */
+                background-image: url('./Articlepage assets/pause.svg');
+            }
+    
+            #mobile-player {
+                width: 100%;
+                height: 60px;
+                background-color: #E9706E;
+                position: fixed;
+                left: 0px;
+                bottom: 0px;
+    
+                /* 使用 flexbox，讓三個按鈕與進度條並排且對齊 */
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+            }
+    
+            #mobile-player .mobile-progress {
+                /* 怕手機尺寸太小不夠放進度條，加上 max-width 處理 */
+                max-width: 284px;
+                width: 284px;
+                height: 6px;
+                background-color: #FEFFF9;
+                border-radius: 30px;
+            }
+    
+            /* 調整進度條在跑的背景色 */
+            #mobile-progress-bar {
+                background-color: #FFD4C7;
+            }
+    
+            /* mobile 的按鈕設定 */
+            #mobile-play-bt {
+                /* 預設顯示播放鍵 */
+                background-image: url('./Articlepage assets/play.svg');
+                background-size: contain;
+                width: 21px;
+                height: 21px;
+            }
+    
+            #mobile-play-bt.pause {
+                /* player 暫停狀態，顯示播放鍵 */
+                background-image: url('./Articlepage assets/play.svg');
+            }
+    
+            #mobile-play-bt.play {
+                /* player 播放狀態，顯示暫停鍵 */
+                background-image: url('./Articlepage assets/pause.svg');
+            }
+    
+            #mobile-player #mobile-prev-10 {
+                width: 12px;
+            }
+    
+            #mobile-player #mobile-next-10 {
+                width: 12px;
+            }
+    
+            /* mobile 的按鈕圖案設定 */
+            #mobile-player .bt img {
+                width: 100%;
+            }
+    
+    
+            @media (min-width: 769px) {
+                .desktop-version {
+                    display: block;
+                }
+    
+                .mobile-version {
+                    display: none;
+                }
+            }
+    
+            @media (max-width: 768px) {
+                .desktop-version {
+                    display: none;
+                }
+    
+                .mobile-version {
+                    display: block;
+                }
+            }
+    
+            @media (max-width: 1514px) {
+                .cards {
+                    width: calc(100vw*(600/1440));
+                }
+            }
+    
+    
+            @media (max-width: 1180px) {
+                .cards {
+                    width: calc(100vw*(900/1440));
+                }
+            }
+    
+            @media (max-width: 768px) {
+    
+                /* header */
+                .ham-icon {
+                    display: inline;
+                }
+    
+                .logo {
+                    width: 170px;
+                }
+    
+                .mynavbar li {
+                    font-size: 18px;
+                    font-weight: 500;
+                    margin: 4px 0;
+                }
+    
+                .mynavbar {
+                    width: 100vw;
+                    padding: 12px 16px;
+                }
+    
+    
+                /* footer */
+                .footer {
+                    width: 100vw;
+                    height: 60px;
+                }
+    
+                .footerbar {
+                    display: none;
+                }
+    
+                .copyright {
+                    bottom: 24px;
+                    font-size: 14px;
+                }
+    
+    
+            }
+    
+            @media (max-width: 575px) {
+    
+                .navbar-collapse {
+                    justify-content: center;
+                }
+    
+                .mybtn {
+                    height: 48px;
+                    font-size: 20px;
+                }
+    
+    
+            }
+    
+            #live {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: row;
+            }
+        </style>
+    </head>
 
 <body>
     <!-- bootstrap navbar -->
@@ -607,7 +606,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="./TV show_index.html">影集</a>
                 </li>
-                <li class="nav-item jump">
+                <li class="nav-item">
                     <a class="nav-link" href="./index.html#yourvoice">你的聲影</a>
                 </li>
                 <li class="nav-item">
@@ -616,104 +615,25 @@
 
             </ul>
         </div>
-
+         
         </div>
     </nav>
     <div class="mobile-version">
         <div class="phone-block">
-            <!-- ipod 播放器 -->
-            <div id="mobile-player">
-
-                <!-- 上十秒按鈕 -->
-                <div id="mobile-prev-10" class="bt">
-                    <img src="./Articlepage assets/next.svg">
-                </div>
-                <!-- 播放／暫停按鈕 -->
-                <div id="mobile-play-bt" class="bt">
-                    <!-- 這邊使用 background-image 的方式呈現播放／暫停鍵 -->
-                </div>
-                <!-- 下十秒按鈕 -->
-                <div id="mobile-next-10" class="bt">
-                    <img src="./Articlepage assets/prev.svg">
-                </div>
-                <!-- progress bar -->
-                <!-- 新增 .desktop-progress ，因為 .progress 要保留給 Bootstrap Progress 使用 -->
-                <div class="progress mobile-progress">
-                    <!-- 使用 Bootstrap Progress Component -->
-                    <!-- 請見 https://getbootstrap.com/docs/4.0/components/progress/ -->
-                    <div id="mobile-progress-bar" class="progress-bar" role="progressbar" style="width: 0%"
-                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-            </div>
-
-            <!-- 透過 <audio> 載入音檔 -->
-            <!-- 因為沒有 `controls` 屬性，所以瀏覽器上上不會呈現預設的播放器 -->
-            <audio id="mobile-audio">
-                <source src="./Articlepage audio/audio-young-patriot.mp3" type="audio/mpeg" />
-            </audio>
-
-            <!-- 載入 jQuery 套件 -->
-            <script src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
-
-            <script>
-                var mobile = {
-                    audio_player: $("#mobile-player"),
-                    play_button: $('#mobile-play-bt'),
-                    prev_button: $('#mobile-prev-10'),
-                    next_button: $('#mobile-next-10'),
-                    progress_bar: $('#mobile-progress-bar')
-                }
-
-
-                // 找到 <audio> 元素
-                var mobile_player = document.getElementById('mobile-audio');
-
-                // 載入音檔
-                mobile_player.load();
-                // 設定聲音大小
-                mobile_player.volume = 0.75;
-
-                // 註冊時間更新的事件
-                mobile_player.addEventListener("timeupdate", function () {
-                    // 當 audio 開始播放後，一起更新進度條 progress bar 
-                    mobile.progress_bar.css('width', (mobile_player.currentTime / mobile_player.duration * 100) + '%');
-                }, false);
-
-                // 當使用者點擊「播放／暫停按鈕」後，
-                // 暫停／播放音檔
-                mobile.play_button.click(function () {
-                    mobile_player[mobile_player.paused ? 'play' : 'pause']();
-                    const css = mobile_player.paused ? 'pause' : 'play'
-                    mobile.play_button.removeClass().addClass(css).addClass('bt');
-                });
-
-                // 當使用者點擊「下十秒按鈕」後，
-                // 音檔要從下十秒開始播放
-                mobile.prev_button.click(function () {
-                    mobile_player.currentTime = mobile_player.currentTime - 10;
-                })
-
-                // 當使用者點擊「上十秒按鈕」後，
-                // 音檔要從上十秒開始播放
-                mobile.next_button.click(function () {
-                    mobile_player.currentTime = mobile_player.currentTime + 10;
-                })
-            </script>
-            <div style="margin-left: auto;
+        <div style="margin-left: auto;
         margin-right: auto; width:390px">
-                <h1 style="padding-left:25px; color:#808080;font-family: 'Noto Sans CJK TC';
+        <h1 style="padding-left:25px; color:#808080;font-family: 'Noto Sans CJK TC';
             margin-top: 75px;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 50px;">紀錄片/《少年小趙》</h1>
-            </div>
-            <figure class="phone">
-                <img src="https://i.ytimg.com/vi/ZCNh41cgxAU/maxresdefault.jpg">
-            </figure>
+        </div>
+        <figure class="phone">
+            <img src="https://i.ytimg.com/vi/ZCNh41cgxAU/maxresdefault.jpg">
+        </figure>
 
-            <h1 style="width: 358px;
+        <h1 style="width: 358px;
         top: 135px;
         
         font-family: 'Noto Sans CJK TC';
@@ -726,18 +646,19 @@
         margin-right: auto;
         margin-top: 20px;
         margin-bottom: 5px;">
-                在軍裝與平頭之間：《少年小趙》日常裝束裡的兩種心境轉變
+           在軍裝與平頭之間：《少年小趙》日常裝束裡的兩種心境轉變
 
-            </h1>
-            <div style="margin-left: auto;
+        </h1>
+        <div style="margin-left: auto;
         margin-right: auto; width:390px">
-                <P class="phone-tag-bt" style="margin-left:15;text-align:center;">紀錄片</P>
-                <P class="phone-tag-bt">中國社會</P>
-                <P class="phone-tag-bt">少年成長</P>
-            </div>
-            <div style="margin-left: auto;
+        <P class="phone-tag-bt" style="margin-left:15;text-align:center;">紀錄片</P>
+        <P class="phone-tag-bt"> 中國社會 </P>
+        <P class="phone-tag-bt">少年成長</P>
+        
+        </div>
+        <div style="margin-left: auto;
         margin-right: auto; width:390px">
-                <h2 style="
+        <h2 style="
     
         font-family: 'Noto Sans CJK TC';
         font-style: normal;
@@ -748,7 +669,7 @@
         margin-left: 25;
         
         ">作者/林子芸</h2>
-                <h3 style="
+        <h3 style="
         font-family: 'Noto Sans CJK TC';
         font-style: normal;
         font-weight: 700;
@@ -758,165 +679,243 @@
         margin-left:270 ;
         display : inline-block;
         margin-bottom: 40px;">
-                    2022/06/13
-                </h3>
-            </div>
+            2022/06/13
+        </h3>
+        </div>
 
-            <div style="background-color:#E9706E; width:300px;margin-left: auto;
+        <div style="background-color:#E9706E; width:300px;margin-left: auto;
         margin-right: auto;padding-top:12; padding-bottom:12;
         padding-left:12px;
         padding-right:12px;">
-                <h style="font-weight:bold;font-family: 'Noto Sans TC';
+            <h style="font-weight:bold;font-family: 'Noto Sans TC';
         font-style: normal;
         font-weight: 700;
         font-size: 14px;
         line-height: 25px;
         color:#FFFFFF">
-                    「還我釣魚寶島，放我船長！」2009年的山西平遙鎮上，19歲的少年趙昶通穿著從網路上買來的全套解放軍制服，自發上街呼喊口號、揮舞五星旗，
-                    出生於1990年的他，房間牆上貼的卻是毛主席的海報，對毛澤東時代的歌曲也是如數家珍，甚至能在鏡頭前琅琅上口。這位行為與所處時空充滿時差感的90後少年，是紀錄片《少年小趙》的主角，而透過小趙的視角，觀眾看見的是中國社會當時正在經歷的躁動與變化。
-                   
-                </h>
+        「還我釣魚寶島，放我船長！」2009年的山西平遙鎮上，19歲的少年趙昶通穿著從網路上買來的全套解放軍制服，自發上街呼喊口號、揮舞五星旗， 出生於1990年的他，房間牆上貼的卻是毛主席的海報，對毛澤東時代的歌曲也是如數家珍，甚至能在鏡頭前琅琅上口。這位行為與所處時空充滿時差感的90後少年，是紀錄片《少年小趙》的主角，而透過小趙的視角，觀眾看見的是中國社會當時正在經歷的躁動與變化。 
+
+            </h>
+        </div>
+
+        <p class="phone-subtitle"> 少年找到迷你裙，從拒絕平庸開始的愛國行動
+        </p>
+        <p class="phone">
+            電影最開始，小趙對模仿毛澤東時代的裝束打扮充滿熱情，醒目的綠色軍裝和紅色五星旗造型，給人建立起強烈「愛國青年」的形象。看到這裡，或許你也同樣好奇，小趙旺盛的愛國心從何而來？我想起青少年性別研究讀本《女孩與性》裡一個有趣的段落。大意是，少女進入青春期會自發地換上低胸上衣、迷你短裙等，能夠展露性魅力的服裝，但這時，她們未必真的明白性感是什麼，是先透過參考生活裡接觸過的性別腳本，從模仿性感開始，一點一點靠近理想中的成熟形象。
+        </p>
+        <p class="phone">
+            以此為切角去理解小趙的愛國裝扮會發現，當我們質疑小趙為何愛國，其實是下意識地認為，這個國家不值得小趙去愛；但其實，一個人愛國是否需要理由？又或者，真正該問的是，當一個人愛國的理由是「為了他自己」時，我們能不能接受？這個自言「不喜歡平庸，討厭埋沒到人堆中」的鄉下少年，在理解愛國的真意前，小趙先聽到的是中國政府承諾要讓人民富強的口號，然後也真的在生活裡看見社會、經濟條件逐漸提升，或許對這樣一個住在偏僻小鎮的貧窮少年而言，他在政府鼓勵的愛國少年形象上，投射的是「自己可以改變」的希望。        </p>
+        <p class="phone">
+            再回頭去看小趙2009年的文革青年式遊行，19歲的小趙選擇軍服，或許就像青春少女選擇迷你裙，他們都在透過模仿特定的裝束和說話，嘗試靠近心中理想的大人形象，而在當時的小趙心裡，成為愛國青年就等於遠離平庸。        </p>
+        <figure class="phone">
+            <img src="https://www.cinezen.hk/wp-content/uploads/2015/10/20151001-%E9%AD%8F%E6%99%82%E7%85%9C-%E5%B0%91%E5%B9%B4%E5%B0%8F%E8%B6%99_p4.jpg">
+        </figure>
+        <figcaption class="phone">《少年小趙》，公共電視紀錄片平台。</figcaption>
+         <p class="phone-subtitle"> 不再是少年，青年小趙行過信仰隧道</p>
+        <p class="phone">
+            在個人主義當道的時代，影片中小趙對國家無條件的信任，說是一種信仰也不為過。
+        </p>
+       
+        <p class="phone">
+            剛上大學時，小趙理解的國家和人民的關係是「互相依賴且互相關照」的——因為國家保護人民，所以人民報效國家。儘管後來接觸了更廣闊的世界，他開始會質疑黨宣傳口號裡「民主專政」的真正意涵，對著鏡頭也會嘲諷幾句：「提高政治覺悟就是好聽一點的洗腦。」但此時，他和國家的關係、對國家的認同，都還不曾遭遇真正的挫折。而在小趙的故事裡，那個考驗信仰的時刻是社區拆遷。
+        </p>
+
+        <p class="phone">
+            在國家的怪手伸進祖家老宅前，小趙自身和國家之間，並沒有過真正的利益衝突。儘管知道了一些國家內部正在發生的髒與壞，但對這位滿懷理想的少年來說，那還只是遠遠瞥見的一片，有些醜惡的風景，是直到被迫站在自己度過大半童年的老宅圍牆上，手持過去拍攝國慶升旗的同一台相機，紀錄自己的家園如何一點一點被拆毀，家人一夕之間沒有了家；直到醜惡的現實滲入生活，才是小趙開始反思過去信仰的時刻。 
+        </p>
+        <figure class="phone">
+            <img src="https://img.myvideo.net.tw/images/CNE010/0000/0005/201611181822410288_2016.jpg">
+        </figure>
+        <figcaption class="phone">《少年小趙》，公共電視紀錄片平台。</figcaption>
+        <p class="phone">
+            建立在利害關係之上的信仰是脆弱的。電影尾聲，失去家園後，小趙祖父的病情快速惡化，不久後病逝在寄居的親戚家中。小趙裡平了頭，從前總是滔滔不絕的他，變成朋友聚會裡，老一個人悶著抽菸的寡言少年，少數開口的時候，言語也總是透露著對國家強行拆遷家園的怨憤。對此，網路上流傳著一種浪漫化的解釋，認為小趙在遭逢變故後，嘴上更離不開國家，是一種「因為悲痛所以愛得比過去更深沉」的表現。
+
+        </p>
+       
+        <p class="phone">
+            在這樣的說法裡，情感光譜上只剩愛、恨兩極，落在在愛與恨之間，說不清與說不出的灰色地帶的人，一律不存在；小趙是離不開國家，因為沒有人可以離開。        </p>
+        <p class="phone">
+            《少年小趙》這部紀錄片作品，導演杜海濱一拍就是五年，而在鏡頭離開後，一般觀眾難再輕易得知小趙的現況。後來，少年小趙長成了一個什麼樣的青年？離開大學後，是否如願做著與攝影有關的工作？ 我們能不能相信電影的最後一顆鏡頭——手裡抓著相機的小趙，自逆光處走來，穿過陰翳的隧道，然後重新走進光裡——我想那裡面有導演的祝福。牆上用紅字大大寫著「信用合作社願為千民萬戶架起致富橋樑」的隧道，少年小趙走過也相信過；而出了隧道後，青年小趙會為自己走出一條明亮的路。 
+        </p>
+ 
+        <!-- ipod 播放器 -->
+        <div id="mobile-player">
+
+            <!-- 上十秒按鈕 -->
+            <div id="mobile-prev-10" class="bt">
+                <img src="./Articlepage assets/next.svg">
             </div>
+            <!-- 播放／暫停按鈕 -->
+            <div id="mobile-play-bt" class="bt">
+                <!-- 這邊使用 background-image 的方式呈現播放／暫停鍵 -->
+            </div>
+            <!-- 下十秒按鈕 -->
+            <div id="mobile-next-10" class="bt">
+                <img src="./Articlepage assets/prev.svg">
+            </div>
+            <!-- progress bar -->
+            <!-- 新增 .desktop-progress ，因為 .progress 要保留給 Bootstrap Progress 使用 -->
+            <div class="progress mobile-progress">
+                <!-- 使用 Bootstrap Progress Component -->
+                <!-- 請見 https://getbootstrap.com/docs/4.0/components/progress/ -->
+                <div id="mobile-progress-bar" class="progress-bar" role="progressbar" style="width: 0%"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
 
-            <p class="phone-subtitle"> 少年找到迷你裙，從拒絕平庸開始的愛國行動
-            </p>
-            <p class="phone">
-                電影最開始，小趙對模仿毛澤東時代的裝束打扮充滿熱情，醒目的綠色軍裝和紅色五星旗造型，給人建立起強烈「愛國青年」的形象。看到這裡，或許你也同樣好奇，小趙旺盛的愛國心從何而來？我想起青少年性別研究讀本《女孩與性》裡一個有趣的段落。大意是，少女進入青春期會自發地換上低胸上衣、迷你短裙等，能夠展露性魅力的服裝，但這時，她們未必真的明白性感是什麼，是先透過參考生活裡接觸過的性別腳本，從模仿性感開始，一點一點靠近理想中的成熟形象。
-            </p>
-            <p class="phone">
-                以此為切角去理解小趙的愛國裝扮會發現，當我們質疑小趙為何愛國，其實是下意識地認為，這個國家不值得小趙去愛；但其實，一個人愛國是否需要理由？又或者，真正該問的是，當一個人愛國的理由是「為了他自己」時，我們能不能接受？這個自言「不喜歡平庸，討厭埋沒到人堆中」的鄉下少年，在理解愛國的真意前，小趙先聽到的是中國政府承諾要讓人民富強的口號，然後也真的在生活裡看見社會、經濟條件逐漸提升，或許對這樣一個住在偏僻小鎮的貧窮少年而言，他在政府鼓勵的愛國少年形象上，投射的是「自己可以改變」的希望。
-            </p>
-            <p class="phone">
-                再回頭去看小趙2009年的文革青年式遊行，19歲的小趙選擇軍服，或許就像青春少女選擇迷你裙，他們都在透過模仿特定的裝束和說話，嘗試靠近心中理想的大人形象，而在當時的小趙心裡，成為愛國青年就等於遠離平庸。
-            </p>
-            <figure class="phone">
-                <img
-                    src="https://www.cinezen.hk/wp-content/uploads/2015/10/20151001-%E9%AD%8F%E6%99%82%E7%85%9C-%E5%B0%91%E5%B9%B4%E5%B0%8F%E8%B6%99_p4.jpg">
-            </figure>
-            <figcaption class="phone">《少年小趙》，公共電視紀錄片平台。</figcaption>
-            <p class="phone-subtitle"> 不再是少年，青年小趙行過信仰隧道</p>
-            <p class="phone">
-                在個人主義當道的時代，影片中小趙對國家無條件的信任，說是一種信仰也不為過。
+        <!-- 透過 <audio> 載入音檔 -->
+        <!-- 因為沒有 `controls` 屬性，所以瀏覽器上上不會呈現預設的播放器 -->
+        <audio id="mobile-audio">
+            <source src="./Articlepage audio/audio-young-patriot.mp3" type="audio/mpeg" />
+        </audio>
 
-            </p>
-            <p class="phone">
-                剛上大學時，小趙理解的國家和人民的關係是「互相依賴且互相關照」的——因為國家保護人民，所以人民報效國家。儘管後來接觸了更廣闊的世界，他開始會質疑黨宣傳口號裡「民主專政」的真正意涵，對著鏡頭也會嘲諷幾句：「提高政治覺悟就是好聽一點的洗腦。」但此時，他和國家的關係、對國家的認同，都還不曾遭遇真正的挫折。而在小趙的故事裡，那個考驗信仰的時刻是社區拆遷。
+        <!-- 載入 jQuery 套件 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-            </p>
+        <script>
+            var mobile = {
+                audio_player: $("#mobile-player"),
+                play_button: $('#mobile-play-bt'),
+                prev_button: $('#mobile-prev-10'),
+                next_button: $('#mobile-next-10'),
+                progress_bar: $('#mobile-progress-bar')
+            }
 
-            <p class="phone">
-                在國家的怪手伸進祖家老宅前，小趙自身和國家之間，並沒有過真正的利益衝突。儘管知道了一些國家內部正在發生的髒與壞，但對這位滿懷理想的少年來說，那還只是遠遠瞥見的一片，有些醜惡的風景，是直到被迫站在自己度過大半童年的老宅圍牆上，手持過去拍攝國慶升旗的同一台相機，紀錄自己的家園如何一點一點被拆毀，家人一夕之間沒有了家；直到醜惡的現實滲入生活，才是小趙開始反思過去信仰的時刻。
 
-            </p>
-            <figure class="phone">
-                <img src="https://img.myvideo.net.tw/images/CNE010/0000/0005/201611181822410288_2016.jpg">
-            </figure>
-            <figcaption class="phone">《少年小趙》，公共電視紀錄片平台。</figcaption>
-            <p class="phone">
-                在這樣的說法裡，情感光譜上只剩愛、恨兩極，落在在愛與恨之間，說不清與說不出的灰色地帶的人，一律不存在；小趙是離不開國家，因為沒有人可以離開。
+            // 找到 <audio> 元素
+            var mobile_player = document.getElementById('mobile-audio');
 
-            </p>
+            // 載入音檔
+            mobile_player.load();
+            // 設定聲音大小
+            mobile_player.volume = 0.75;
 
-            <p class="phone">
-                《少年小趙》這部紀錄片作品，導演杜海濱一拍就是五年，而在鏡頭離開後，一般觀眾難再輕易得知小趙的現況。後來，少年小趙長成了一個什麼樣的青年？離開大學後，是否如願做著與攝影有關的工作？
-                我們能不能相信電影的最後一顆鏡頭——手裡抓著相機的小趙，自逆光處走來，穿過陰翳的隧道，然後重新走進光裡——我想那裡面有導演的祝福。牆上用紅字大大寫著「信用合作社願為千民萬戶架起致富橋樑」的隧道，少年小趙走過也相信過；而出了隧道後，青年小趙會為自己走出一條明亮的路。
-            </p>
-        
+            // 註冊時間更新的事件
+            mobile_player.addEventListener("timeupdate", function () {
+                // 當 audio 開始播放後，一起更新進度條 progress bar 
+                mobile.progress_bar.css('width', (mobile_player.currentTime / mobile_player.duration * 100) + '%');
+            }, false);
+
+            // 當使用者點擊「播放／暫停按鈕」後，
+            // 暫停／播放音檔
+            mobile.play_button.click(function () {
+                mobile_player[mobile_player.paused ? 'play' : 'pause']();
+                const css = mobile_player.paused ? 'pause' : 'play'
+                mobile.play_button.removeClass().addClass(css).addClass('bt');
+            });
+
+            // 當使用者點擊「下十秒按鈕」後，
+            // 音檔要從下十秒開始播放
+            mobile.prev_button.click(function () {
+                mobile_player.currentTime = mobile_player.currentTime - 10;
+            })
+
+            // 當使用者點擊「上十秒按鈕」後，
+            // 音檔要從上十秒開始播放
+            mobile.next_button.click(function () {
+                mobile_player.currentTime = mobile_player.currentTime + 10;
+            })
+        </script>
+        </div>
     </div>
-
-    <div class="destop-version">
-        <div class="mobile-block">
-            <!-- ipod 播放器 -->
-            <div id="desktop-player">
-                <!-- ipod 白色螢幕 -->
-                <div class="white-screen"></div>
-                <!-- 標題 -->
-                <h6>在軍裝與平頭之間：《少年小趙》</h6>
-                <!-- progress bar -->
-                <!-- 新增 .desktop-progress ，因為 .progress 要保留給 Bootstrap Progress 使用 -->
-                <div class="progress desktop-progress">
-                    <!-- 使用 Bootstrap Progress Component -->
-                    <!-- 請見 https://getbootstrap.com/docs/4.0/components/progress/ -->
-                    <div id="desktop-progress-bar" class="progress-bar" role="progressbar" style="width: 0%"
-                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-                <!-- 上十秒按鈕 -->
-                <div id="desktop-prev-10" class="bt">
-                    <img src="./Articlepage assets/next.svg">
-                </div>
-                <!-- 播放／暫停按鈕 -->
-                <div id="desktop-play-bt" class="bt">
-                    <!-- 這邊使用 background-image 的方式呈現播放／暫停鍵 -->
-                </div>
-                <!-- 下十秒按鈕 -->
-                <div id="desktop-next-10" class="bt">
-                    <img src="./Articlepage assets/prev.svg">
-                </div>
+    <div class="desktop-version">
+     
+        <!-- ipod 播放器 -->
+        <div id="desktop-player">
+            <!-- ipod 白色螢幕 -->
+            <div class="white-screen"></div>
+            <!-- 標題 -->
+            <h6>《少年小趙》日常裝束裡的兩種心境轉變h6>
+            <!-- progress bar -->
+            <!-- 新增 .desktop-progress ，因為 .progress 要保留給 Bootstrap Progress 使用 -->
+            <div class="progress desktop-progress">
+                <!-- 使用 Bootstrap Progress Component -->
+                <!-- 請見 https://getbootstrap.com/docs/4.0/components/progress/ -->
+                <div id="desktop-progress-bar" class="progress-bar" role="progressbar" style="width: 0%"
+                    aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
             </div>
+            <!-- 上十秒按鈕 -->
+            <div id="desktop-prev-10" class="bt">
+                <img src="./Articlepage assets/next.svg">
+            </div>
+            <!-- 播放／暫停按鈕 -->
+            <div id="desktop-play-bt" class="bt">
+                <!-- 這邊使用 background-image 的方式呈現播放／暫停鍵 -->
+            </div>
+            <!-- 下十秒按鈕 -->
+            <div id="desktop-next-10" class="bt">
+                <img src="./Articlepage assets/prev.svg">
+            </div>
+        </div>
 
-            <!-- 透過 <audio> 載入音檔 -->
-            <!-- 因為沒有 `controls` 屬性，所以瀏覽器上上不會呈現預設的播放器 -->
-            <audio id="desktop-audio">
-                <source src="./Articlepage audio/audio-young-patriot.mp3" type="audio/mpeg" />
-            </audio>
+        <!-- 透過 <audio> 載入音檔 -->
+        <!-- 因為沒有 `controls` 屬性，所以瀏覽器上上不會呈現預設的播放器 -->
+        <audio id="desktop-audio">
+            <source src="./Articlepage audio/audio-young-patriot.mp3" type="audio/mpeg" />
+        </audio>
 
-            <!-- 載入 jQuery 套件 -->
-            <script src="https://code.jquery.com/jquery-3.6.0.js"
-                integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <!-- 載入 jQuery 套件 -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js"
+            integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
 
-            <script>
-                var desktop = {
-                    audio_player: $("#desktop-player"),
-                    play_button: $('#desktop-play-bt'),
-                    prev_button: $('#desktop-prev-10'),
-                    next_button: $('#desktop-next-10'),
-                    progress_bar: $('#desktop-progress-bar')
-                }
+        <script>
+            var desktop = {
+                audio_player: $("#desktop-player"),
+                play_button: $('#desktop-play-bt'),
+                prev_button: $('#desktop-prev-10'),
+                next_button: $('#desktop-next-10'),
+                progress_bar: $('#desktop-progress-bar')
+            }
 
-                // 找到 <audio> 元素
-                var desktop_player = document.getElementById('desktop-audio');
+            // 找到 <audio> 元素
+            var desktop_player = document.getElementById('desktop-audio');
 
-                // 載入音檔
-                desktop_player.load();
-                // 設定聲音大小
-                desktop_player.volume = 0.75;
+            // 載入音檔
+            desktop_player.load();
+            // 設定聲音大小
+            desktop_player.volume = 0.75;
 
-                // 註冊時間更新的事件
-                desktop_player.addEventListener("timeupdate", function () {
-                    // 當 audio 開始播放後，一起更新進度條 progress bar 
-                    desktop.progress_bar.css('width', (desktop_player.currentTime / desktop_player.duration * 100) + '%');
-                }, false);
+            // 註冊時間更新的事件
+            desktop_player.addEventListener("timeupdate", function () {
+                // 當 audio 開始播放後，一起更新進度條 progress bar 
+                desktop.progress_bar.css('width', (desktop_player.currentTime / desktop_player.duration * 100) + '%');
+            }, false);
 
-                // 當使用者點擊「播放／暫停按鈕」後，
-                // 暫停／播放音檔
-                desktop.play_button.click(function () {
-                    desktop_player[desktop_player.paused ? 'play' : 'pause']();
-                    const css = desktop_player.paused ? 'pause' : 'play'
-                    desktop.play_button.removeClass().addClass(css).addClass('bt');
-                });
+            // 當使用者點擊「播放／暫停按鈕」後，
+            // 暫停／播放音檔
+            desktop.play_button.click(function () {
+                desktop_player[desktop_player.paused ? 'play' : 'pause']();
+                const css = desktop_player.paused ? 'pause' : 'play'
+                desktop.play_button.removeClass().addClass(css).addClass('bt');
+            });
 
-                // 當使用者點擊「下十秒按鈕」後，
-                // 音檔要從下十秒開始播放
-                desktop.prev_button.click(function () {
-                    desktop_player.currentTime = desktop_player.currentTime - 10;
-                })
+            // 當使用者點擊「下十秒按鈕」後，
+            // 音檔要從下十秒開始播放
+            desktop.prev_button.click(function () {
+                desktop_player.currentTime = desktop_player.currentTime - 10;
+            })
 
-                // 當使用者點擊「上十秒按鈕」後，
-                // 音檔要從上十秒開始播放
-                desktop.next_button.click(function () {
-                    desktop_player.currentTime = desktop_player.currentTime + 10;
-                })
-            </script>
-            <p style="margin-top: 100px" ;>紀錄片/《少年小趙》</p>
+            // 當使用者點擊「上十秒按鈕」後，
+            // 音檔要從上十秒開始播放
+            desktop.next_button.click(function () {
+                desktop_player.currentTime = desktop_player.currentTime + 10;
+            })
+        </script>
+    
+        <div class="mobile-block">
+
+            <p style="margin-top: 100px";>電影/《世界上最爛的人》</p>
             <div style="width: 735px;
             height:auto;
             margin-left: 165;
             margin-right: auto;border-radius:10px;">
-                <img class="test" style="width:737px" src="https://i.ytimg.com/vi/ZCNh41cgxAU/maxresdefault.jpg">
-
+                <img class="test" style="width:737px"
+                    src="https://i.ytimg.com/vi/ZCNh41cgxAU/maxresdefault.jpg">
+    
             </div>
-
-
+    
+            
             <h1 style="
             width:740px;
             margin-left: 165;
@@ -931,14 +930,14 @@
             line-height: 50px;
             color: #000000;
             margin-bottom: 20px;">
-                在軍裝與平頭之間：《少年小趙》日常裝束裡的兩種心境轉變
-
+              在軍裝與平頭之間：《少年小趙》日常裝束裡的兩種心境轉變
 
             </h1>
-
+    
             <P class="tag-bt" style="margin-left:165;text-align:center;">紀錄片</P>
             <P class="tag-bt">中國社會</P>
             <P class="tag-bt">少年成長</P>
+          
             <h2 style="width:905px;
             
             font-family: 'Noto Sans CJK TC';
@@ -988,7 +987,7 @@
                         d="M30.9363 5.94336C30.556 5.94336 30.1913 6.08649 29.9223 6.34125C29.6534 6.59602 29.5023 6.94155 29.5023 7.30185V14.0943C29.5023 14.4546 29.6534 14.8001 29.9223 15.0549C30.1913 15.3096 30.556 15.4528 30.9363 15.4528C31.3166 15.4528 31.6814 15.3096 31.9503 15.0549C32.2192 14.8001 32.3703 14.4546 32.3703 14.0943V7.30185C32.3703 6.94155 32.2192 6.59602 31.9503 6.34125C31.6814 6.08649 31.3166 5.94336 30.9363 5.94336ZM35.5967 5.94336C35.2164 5.94336 34.8516 6.08649 34.5827 6.34125C34.3138 6.59602 34.1627 6.94155 34.1627 7.30185V14.0943C34.1627 14.4546 34.3138 14.8001 34.5827 15.0549C34.8516 15.3096 35.2164 15.4528 35.5967 15.4528C35.977 15.4528 36.3417 15.3096 36.6106 15.0549C36.8796 14.8001 37.0306 14.4546 37.0306 14.0943V7.30185C37.0306 6.94155 36.8796 6.59602 36.6106 6.34125C36.3417 6.08649 35.977 5.94336 35.5967 5.94336Z"
                         fill="#E9706E" />
                 </svg>
-
+    
             </div>
             <div style="background-color:#E9706E; width:670px;margin-left: 195;
             margin-right: auto;padding-top:15; padding-bottom:15;
@@ -1000,72 +999,66 @@
             font-size: 15px;
             line-height: 40px;
             color:#FFFFFF">
-                    「還我釣魚寶島，放我船長！」2009年的山西平遙鎮上，19歲的少年趙昶通穿著從網路上買來的全套解放軍制服，自發上街呼喊口號、揮舞五星旗，
-                    出生於1990年的他，房間牆上貼的卻是毛主席的海報，對毛澤東時代的歌曲也是如數家珍，甚至能在鏡頭前琅琅上口。這位行為與所處時空充滿時差感的90後少年，是紀錄片《少年小趙》的主角，而透過小趙的視角，觀眾看見的是中國社會當時正在經歷的躁動與變化。
-                  
+                  「還我釣魚寶島，放我船長！」2009年的山西平遙鎮上，19歲的少年趙昶通穿著從網路上買來的全套解放軍制服，自發上街呼喊口號、揮舞五星旗， 出生於1990年的他，房間牆上貼的卻是毛主席的海報，對毛澤東時代的歌曲也是如數家珍，甚至能在鏡頭前琅琅上口。這位行為與所處時空充滿時差感的90後少年，是紀錄片《少年小趙》的主角，而透過小趙的視角，觀眾看見的是中國社會當時正在經歷的躁動與變化。 
 
-                </h>
-            </div>
-            <p class="subtitle"> 少年找到迷你裙，從拒絕平庸開始的愛國行動
-            </p>
-            <p>
-                電影最開始，小趙對模仿毛澤東時代的裝束打扮充滿熱情，醒目的綠色軍裝和紅色五星旗造型，給人建立起強烈「愛國青年」的形象。看到這裡，或許你也同樣好奇，小趙旺盛的愛國心從何而來？我想起青少年性別研究讀本《女孩與性》裡一個有趣的段落。大意是，少女進入青春期會自發地換上低胸上衣、迷你短裙等，能夠展露性魅力的服裝，但這時，她們未必真的明白性感是什麼，是先透過參考生活裡接觸過的性別腳本，從模仿性感開始，一點一點靠近理想中的成熟形象。
-
-            </p>
-            <p>
-                以此為切角去理解小趙的愛國裝扮會發現，當我們質疑小趙為何愛國，其實是下意識地認為，這個國家不值得小趙去愛；但其實，一個人愛國是否需要理由？又或者，真正該問的是，當一個人愛國的理由是「為了他自己」時，我們能不能接受？這個自言「不喜歡平庸，討厭埋沒到人堆中」的鄉下少年，在理解愛國的真意前，小趙先聽到的是中國政府承諾要讓人民富強的口號，然後也真的在生活裡看見社會、經濟條件逐漸提升，或許對這樣一個住在偏僻小鎮的貧窮少年而言，他在政府鼓勵的愛國少年形象上，投射的是「自己可以改變」的希望。
-
-            </p>
-
-            <p>
-                再回頭去看小趙2009年的文革青年式遊行，19歲的小趙選擇軍服，或許就像青春少女選擇迷你裙，他們都在透過模仿特定的裝束和說話，嘗試靠近心中理想的大人形象，而在當時的小趙心裡，成為愛國青年就等於遠離平庸。
-
-            </p>
-            <figure class="mobile">
-                <img
-                    src="https://www.cinezen.hk/wp-content/uploads/2015/10/20151001-%E9%AD%8F%E6%99%82%E7%85%9C-%E5%B0%91%E5%B9%B4%E5%B0%8F%E8%B6%99_p4.jpg">
-            </figure>
-            <figcaption class="mobile">《少年小趙》，公共電視紀錄片平台。</figcaption>
-            <p class="subtitle">不再是少年，青年小趙行過信仰隧道 </p>
-            <p>
-                在個人主義當道的時代，影片中小趙對國家無條件的信任，說是一種信仰也不為過。
-            </p>
-            <p>
-                剛上大學時，小趙理解的國家和人民的關係是「互相依賴且互相關照」的——因為國家保護人民，所以人民報效國家。儘管後來接觸了更廣闊的世界，他開始會質疑黨宣傳口號裡「民主專政」的真正意涵，對著鏡頭也會嘲諷幾句：「提高政治覺悟就是好聽一點的洗腦。」但此時，他和國家的關係、對國家的認同，都還不曾遭遇真正的挫折。而在小趙的故事裡，那個考驗信仰的時刻是社區拆遷。
-
-            </p>
-            <p>
-                在國家的怪手伸進祖家老宅前，小趙自身和國家之間，並沒有過真正的利益衝突。儘管知道了一些國家內部正在發生的髒與壞，但對這位滿懷理想的少年來說，那還只是遠遠瞥見的一片，有些醜惡的風景，是直到被迫站在自己度過大半童年的老宅圍牆上，手持過去拍攝國慶升旗的同一台相機，紀錄自己的家園如何一點一點被拆毀，家人一夕之間沒有了家；直到醜惡的現實滲入生活，才是小趙開始反思過去信仰的時刻。
-            </p>
-            <figure class="mobile">
-                <img src="https://img.myvideo.net.tw/images/CNE010/0000/0005/201611181822410288_2016.jpg">
-            </figure>
-            <figcaption class="mobile">《少年小趙》，公共電視紀錄片平台。</figcaption>
-            <p>
-                在這樣的說法裡，情感光譜上只剩愛、恨兩極，落在在愛與恨之間，說不清與說不出的灰色地帶的人，一律不存在；小趙是離不開國家，因為沒有人可以離開。
-            </p>
-
-            <p>
-                《少年小趙》這部紀錄片作品，導演杜海濱一拍就是五年，而在鏡頭離開後，一般觀眾難再輕易得知小趙的現況。後來，少年小趙長成了一個什麼樣的青年？離開大學後，是否如願做著與攝影有關的工作？
-                我們能不能相信電影的最後一顆鏡頭——手裡抓著相機的小趙，自逆光處走來，穿過陰翳的隧道，然後重新走進光裡——我想那裡面有導演的祝福。牆上用紅字大大寫著「信用合作社願為千民萬戶架起致富橋樑」的隧道，少年小趙走過也相信過；而出了隧道後，青年小趙會為自己走出一條明亮的路。
-
-
-            </p>
-
-
-
+            </h>
         </div>
-    </div>
+
+        <p class="subtitle"> 少年找到迷你裙，從拒絕平庸開始的愛國行動
+        </p>
+        <p>
+            電影最開始，小趙對模仿毛澤東時代的裝束打扮充滿熱情，醒目的綠色軍裝和紅色五星旗造型，給人建立起強烈「愛國青年」的形象。看到這裡，或許你也同樣好奇，小趙旺盛的愛國心從何而來？我想起青少年性別研究讀本《女孩與性》裡一個有趣的段落。大意是，少女進入青春期會自發地換上低胸上衣、迷你短裙等，能夠展露性魅力的服裝，但這時，她們未必真的明白性感是什麼，是先透過參考生活裡接觸過的性別腳本，從模仿性感開始，一點一點靠近理想中的成熟形象。
+        </p>
+        <p>
+            以此為切角去理解小趙的愛國裝扮會發現，當我們質疑小趙為何愛國，其實是下意識地認為，這個國家不值得小趙去愛；但其實，一個人愛國是否需要理由？又或者，真正該問的是，當一個人愛國的理由是「為了他自己」時，我們能不能接受？這個自言「不喜歡平庸，討厭埋沒到人堆中」的鄉下少年，在理解愛國的真意前，小趙先聽到的是中國政府承諾要讓人民富強的口號，然後也真的在生活裡看見社會、經濟條件逐漸提升，或許對這樣一個住在偏僻小鎮的貧窮少年而言，他在政府鼓勵的愛國少年形象上，投射的是「自己可以改變」的希望。        </p>
+        <p>
+            再回頭去看小趙2009年的文革青年式遊行，19歲的小趙選擇軍服，或許就像青春少女選擇迷你裙，他們都在透過模仿特定的裝束和說話，嘗試靠近心中理想的大人形象，而在當時的小趙心裡，成為愛國青年就等於遠離平庸。        </p>
+        <figure class="mobile">
+            <img src="https://www.cinezen.hk/wp-content/uploads/2015/10/20151001-%E9%AD%8F%E6%99%82%E7%85%9C-%E5%B0%91%E5%B9%B4%E5%B0%8F%E8%B6%99_p4.jpg">
+        </figure>
+        <figcaption class="mobile">《少年小趙》，公共電視紀錄片平台。</figcaption>
+         <p class="subtitle"> 不再是少年，青年小趙行過信仰隧道</p>
+        <p >
+            在個人主義當道的時代，影片中小趙對國家無條件的信任，說是一種信仰也不為過。
+        </p>
+       
+        <p>
+            剛上大學時，小趙理解的國家和人民的關係是「互相依賴且互相關照」的——因為國家保護人民，所以人民報效國家。儘管後來接觸了更廣闊的世界，他開始會質疑黨宣傳口號裡「民主專政」的真正意涵，對著鏡頭也會嘲諷幾句：「提高政治覺悟就是好聽一點的洗腦。」但此時，他和國家的關係、對國家的認同，都還不曾遭遇真正的挫折。而在小趙的故事裡，那個考驗信仰的時刻是社區拆遷。
+        </p>
+
+        <p >
+            在國家的怪手伸進祖家老宅前，小趙自身和國家之間，並沒有過真正的利益衝突。儘管知道了一些國家內部正在發生的髒與壞，但對這位滿懷理想的少年來說，那還只是遠遠瞥見的一片，有些醜惡的風景，是直到被迫站在自己度過大半童年的老宅圍牆上，手持過去拍攝國慶升旗的同一台相機，紀錄自己的家園如何一點一點被拆毀，家人一夕之間沒有了家；直到醜惡的現實滲入生活，才是小趙開始反思過去信仰的時刻。 
+        </p>
+        <figure class="mobile">
+            <img src="https://img.myvideo.net.tw/images/CNE010/0000/0005/201611181822410288_2016.jpg">
+        </figure>
+        <figcaption class="mobile">《少年小趙》，公共電視紀錄片平台。</figcaption>
+        <p>
+            建立在利害關係之上的信仰是脆弱的。電影尾聲，失去家園後，小趙祖父的病情快速惡化，不久後病逝在寄居的親戚家中。小趙裡平了頭，從前總是滔滔不絕的他，變成朋友聚會裡，老一個人悶著抽菸的寡言少年，少數開口的時候，言語也總是透露著對國家強行拆遷家園的怨憤。對此，網路上流傳著一種浪漫化的解釋，認為小趙在遭逢變故後，嘴上更離不開國家，是一種「因為悲痛所以愛得比過去更深沉」的表現。
+
+        </p>
+       
+        <p>
+            在這樣的說法裡，情感光譜上只剩愛、恨兩極，落在在愛與恨之間，說不清與說不出的灰色地帶的人，一律不存在；小趙是離不開國家，因為沒有人可以離開。        </p>
+        <p>
+            《少年小趙》這部紀錄片作品，導演杜海濱一拍就是五年，而在鏡頭離開後，一般觀眾難再輕易得知小趙的現況。後來，少年小趙長成了一個什麼樣的青年？離開大學後，是否如願做著與攝影有關的工作？ 我們能不能相信電影的最後一顆鏡頭——手裡抓著相機的小趙，自逆光處走來，穿過陰翳的隧道，然後重新走進光裡——我想那裡面有導演的祝福。牆上用紅字大大寫著「信用合作社願為千民萬戶架起致富橋樑」的隧道，少年小趙走過也相信過；而出了隧道後，青年小趙會為自己走出一條明亮的路。 
+        </p>
+           
+    
+    
+            </div>
+        </div>
     </div>
     <div class="footer">
         <ul class="footerbar">
             <li><a href="./movie_index.html">電影</a></li>
-            <li><a href="./TV show">影集</a></li>
+            <li><a href="./TV show_index.html">影集</a></li>
             <li><a href="./index.html#yourvoice">你的聲影</a></li>
             <li><a href="./about us.html">關於少女</a></li>
         </ul>
         <h6 class="copyright">Copyright © 2022 聲影少女.</h6>
     </div>
+
     <!-- bootstrap javascript -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
