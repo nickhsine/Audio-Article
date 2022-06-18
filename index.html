@@ -1091,6 +1091,10 @@
 
 
         }
+        
+        .vh-100 {
+           height: 100vh; 
+         }
 
 
         /* RWD */
@@ -1212,27 +1216,27 @@
 
                 <!--滾動照片區-->
                 <div class="carousel-inner">
-                    <div class="carousel-item active">
+                    <div class="carousel-item vh-100 active">
                         <a href="Her.html"><img class="d-block w-100" src="./asset/img/img-movie-her.jpg"
                                 alt="雲端情人劇照"></a>
                         <div class="featured-main-title-1">從雲端情人看愛「人」的勇氣</div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item vh-100">
                         <a href="The Worst Person in the World.html"><img class="d-block w-100"
                                 src="./asset/img/img-movie-the worst person in the world.jpg" alt="世界上最爛的人劇照"></a>
                         <div class="featured-main-title-2">當失去和擁有同樣困難：《世界上最爛的人》裡的現代女性困境</div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item vh-100">
                         <a href="Arcane- League of Legends.html"><img class="d-block w-100"
                                 src="./asset/img/img-series-arcane.jpg" alt="奧術劇照"></a>
                         <div class="featured-main-title-2">沒玩過遊戲也能共感！《英雄聯盟：奧術》帶你窺探英雄內心世界</div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item vh-100">
                         <a href="glass.html"><img class="d-block w-100" src="./asset/img/img-movie-glass.jpg"
                                 alt="異裂劇照"></a>
                         <div class="featured-main-title-2">奈沙馬蘭超級英雄電影十年馬拉松最終章——Glass異裂</div>
                     </div>
-                    <div class="carousel-item">
+                    <div class="carousel-item vh-100">
                         <a href="Toy Story.html"><img class="d-block w-100" src="./asset/img/img-movie-toystory.jpg"
                                 alt="玩具總動員4劇照"></a>
                         <div class="featured-main-title-1">對於理所當然的物件來說，存在的意義是甚麼？</div>
@@ -1777,11 +1781,12 @@
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
 
-    <!-- 載入 jQuery 套件 -->
+    <!-- 載入 jQuery 套件 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
         integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
 
-    <script>
+    <script>-->
+    
         function onLoad() {
             // 等一秒鐘後，在 `<div id="loader">` 的元素上，加上 `class="loaded"`。
             // `<div id="loader">` -> `<div id="loader" class="loaded">`
