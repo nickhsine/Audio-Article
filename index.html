@@ -1788,12 +1788,17 @@
     <script>
     
         function onLoad() {
-            // 等一秒鐘後，在 `<div id="loader">` 的元素上，加上 `class="loaded"`。
-            // `<div id="loader">` -> `<div id="loader" class="loaded">`
+            // 當 html, JavaScript, CSS 和圖片都載入完成，
+            // 再等 3 秒鐘，把 loader 移除。
             setTimeout(() => {
                 $('#loader').addClass("loaded");
-            }, 6300)
+            }, 3000);
         }
+
+        // 最久等 10 秒鐘後，將 loader 移除。
+        setTimeout(() => {
+          $('#loader').addClass("loaded");
+        }, 10000);
     </script>
 
 </body>
